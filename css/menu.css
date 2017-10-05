@@ -1,0 +1,344 @@
+#homeimg
+{
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    line-height: 500px;
+    width: 100%;
+    height: 33.33%;
+    z-index: 20;
+}
+
+
+.scrollbtn{
+  background-color: transparent;
+  border-style: none;
+}
+.scrollbtn1{
+  position: absolute;
+    top: 92vh;
+    left: 49.68%;
+    width: 34px;
+    height: 34px;
+    margin-left: -12px;
+    border-left: 4px solid tomato;
+    border-bottom: 4px solid tomato;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+    z-index: 30;
+  outline:none !important;
+}
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+0% {
+    transform: rotate(-45deg) translate(0, 0);
+}
+style.css:253
+20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+}
+style.css:256
+40% {
+    transform: rotate(-45deg) translate(0, 0);
+}
+.menu
+{
+	position: fixed;
+	z-index:1001;
+	width: 100%;
+	height: 100%;
+	
+	 background:rgba(255,255,255,0.6) ;
+  
+  
+	display: none;
+
+  
+}
+.menu-text
+{ 
+
+  padding-top: 160px;
+  text-align: center;
+  font-size: 0.5em;
+  opacity: 1 !important;
+  z-index: 1001;
+  width: 25%;
+  float: left;
+
+  height: 100%;
+  background-color:white;
+}
+/*Box animation*/
+#menu-half
+{
+  width: 75%;
+  height: 100%;
+  float: right;
+}
+
+.boxes
+{
+  height: 50vh;
+  
+  
+  
+  background-color: #edf3ff;
+  margin: 0px !important;
+
+  
+}
+
+@media(max-width: 768px){
+  .menu-text
+{
+  padding-top: 180px;
+
+  text-align: center;
+  font-size: 0.5em;
+  opacity: 1 !important;
+  z-index: 1001;
+  width: 75%;
+  float: left;
+
+  height: 100%;
+  background-color:white;
+}
+/*Box animation*/
+#menu-half
+{
+  width: 25%;
+  height: 100%;
+  float: right;
+}
+
+#homeimg
+{
+   /* background-size: cover;
+    
+    background-position: center bottom;
+    text-align:center;
+    line-height: 500px;  */
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.img-responsive{
+  height: 100vh !important;
+}
+
+
+#contact_box{
+
+  height: 100%; width: 30%; margin:10px; box-shadow: 5px 5px 5px grey; 
+}
+
+
+.boxes
+{
+  height: 100vh;
+  
+  
+  
+  background-color: #edf3ff;
+  margin: 0px !important;
+
+  
+}
+
+
+}
+
+.menu-text > button{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: tomato;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  
+}
+.span{
+  display: block;
+  padding: 15px 40px;
+}
+.menu-text > button::before, .menu-text > button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: tomato;
+}
+
+.span::before, .span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: tomato;
+}
+.menu-text > button:hover::before,.menu-text > button:hover::after{
+  width: 100%;
+}
+.menu-text > button:hover .span::before,.menu-text  > button:hover .span::after{
+  height: 100%;
+}
+/*----- button 1 -----*/
+.btn-1::before, .btn-1::after{
+  transition-delay: 0.2s;
+}
+.btn-1 .span::before, .btn-1 .span::after{
+  transition-delay: 0s;
+}
+.btn-1::before{
+  right: 0;
+  top: 0;
+}
+.btn-1::after{
+  left: 0;
+  bottom: 0;
+}
+.btn-1 .span::before{
+  left: 0;
+  top: 0;
+}
+.btn-1 .span::after{
+  right: 0;
+  bottom: 0;
+}
+.btn-1:hover::before, .btn-1:hover::after{
+  transition-delay: 0s;
+}
+.btn-1:hover .span::before, .btn-1:hover .span::after{
+  transition-delay: 0.2s;
+}
+
+
+/*hamburger animated css: */
+	.c-hamburger {
+  display: block;
+  position: fixed;
+  z-index:1001;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  width: 86px;
+  height: 76px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger #span-hamburger {
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 18px;
+  right: 40px;
+  height: 3px;
+  background: red;
+}
+
+.c-hamburger #span-hamburger::before,
+.c-hamburger #span-hamburger::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: red;
+  content: "";
+}
+
+.c-hamburger #span-hamburger::before {
+  top: -10px;
+}
+
+.c-hamburger #span-hamburger::after {
+  bottom: -10px;
+}
+.c-hamburger--htx {
+  background-color: transparent;
+}
+
+.c-hamburger--htx #span-hamburger {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx #span-hamburger::before,
+.c-hamburger--htx #span-hamburger::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx #span-hamburger::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx #span-hamburger::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: transparent;
+}
+
+.c-hamburger--htx.is-active #span-hamburger {
+  background: none;
+}
+
+.c-hamburger--htx.is-active #span-hamburger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active #span-hamburger::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active #span-hamburger::before,
+.c-hamburger--htx.is-active #span-hamburger::after {
+  transition-delay: 0s, 0.3s;
+}
+
+.modal-content{
+      top: 15vh;
+    height: 65vh;
+    width: 94vw;
+}
+ @media(min-width: 768px)
+ {
+    .modal-content{
+      top: 15vh;
+    height: 65vh;
+        width: 74vw;
+}
+ }
