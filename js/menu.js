@@ -1,4 +1,5 @@
 var flag=0;
+
 $(".c-hamburger").on("click",function()
 {
       if(!flag)
@@ -105,8 +106,6 @@ $("#event1").on("click",function()
 	$(".modal-title").html("Rules for PULSE");
 	$(".modal-body").html("<ul> \
   <li>Time limit: </li> \
-  <li>Types allowed(Carnatic,Hindustani,English)</li> \
-  <li>Instruments allowed: </li> \
 </ul>");
 	$(".popupbtn").click();
 });
@@ -114,9 +113,7 @@ $("#event2").on("click",function()
 {
 	$(".modal-title").html("Rules for SYMPHONY");
 	$(".modal-body").html("<ul> \
-  <li>Time limit: </li> \
-  <li>Types allowed(Carnatic,Hindustani,English)</li> \
-  <li>Instruments allowed: </li> \
+  <li>Time limit: 5</li> \
 </ul>");
 	$(".popupbtn").click();
 });
@@ -124,18 +121,16 @@ $("#event3").on("click",function()
 {
 	$(".modal-title").html("Rules for MÉLOPACTÉ");
 	$(".modal-body").html("<ul> \
-  <li>Max number per group/band: </li> \
-  <li>Time limit: </li> \
+  <li>Max number per group/band: 10</li> \
+  <li>Time limit: 10mins + 5min ( setup )</li> \
   <li>Prior information about group/band</li> \
-  <li>After Registration a small piece of information about the band must be sent to: email@gmail.com</li> \
+  <li>After Registration a small piece of information about the band must be sent to: lecielfest@gmail.com</li> \
   <li>Pre recorded sounds not allowed</li> \
-  <li>Types of instruments allowed: </li> \
+  <li>Types of instruments allowed: Any</li> \
   <li>Band members must be from within the same college </li> \
-  <li>Any extra weightage: </li> \
   <li>A person can perform for only one band</li> \
-  <li>Jusges decision are final and will not be available for review.</li> \
-  <li>Any instrument provided by college: </li> \
-  <li>Obscenity on stage strictly prohibited</li> \
+  <li>Judges decision are final and will not be available for review.</li> \
+  <li>Instrument provided : Keyboard, Electric guitar, Electric Bass and Drum kit. </li> \
 </ul>");
 	$(".popupbtn").click();
 });
@@ -158,7 +153,7 @@ $("#event5").on("click",function()
 	$(".modal-title").html("Rules for STOMP");
 	$(".modal-body").html("<ul> \
   <li>Props can be used during the dance. But the contestants have to arrange by themselves</li> \
-  <li>Max time limit: 3 min</li> \
+  <li>Max time limit: 5 min</li> \
   <li>Songs have to be provided 1 hour before the commencement of the program</li> \
   <li>There is no restriction on the language and the form of dance</li> \
   <li>A person who is participating in solo can perform in group dance also. But they are not allowed to participate in duet dance.</li> \
@@ -171,7 +166,7 @@ $("#event6").on("click",function()
 	$(".modal-body").html("<ul> \
   <li>Both the participants should be of same college</li> \
   <li>Props can be used during the dance. But the contestants has to arrange by themselves</li> \
-  <li>Max time limit: 3-5 min</li> \
+  <li>Max time limit: 5 min</li> \
   <li>There is no restriction on the language and the form of dance.</li> \
   <li>Songs have to be provided 1 hour before the commencement of the program.</li> \
   <li>A person who is participating in duet can perform in group dance also. But they are not allowed to participate in solo dance.</li> \
@@ -185,7 +180,7 @@ $("#event7").on("click",function()
   <li>No restriction on topic. However topics that are offensive to certain community, religion, gender etc are strictly prohibited and will lead to direct disqualification.</li> \
   <li>Max time limit: 15 min</li> \
   <li>The language must be English only</li> \
-  <li>A brief description of the topic chosen must be provided during the registration to email@gmail.com</li> \
+  <li>A brief description of the topic chosen must be provided during the registration to lecielfest@gmail.com</li> \
   <li>The script must be original</li> \
 </ul>");
 	$(".popupbtn").click();
@@ -197,7 +192,7 @@ $("#event8").on("click",function()
   <li>Maximum of 12 participants per team ( 10 on stage and 2 back stage)</li> \
   <li>Language must be English only.</li> \
   <li>Max time limit: 15 mins</li> \
-  <li>A brief description of the topic chosen must be provided during the registration to email@gmail.com</li> \
+  <li>A brief description of the topic chosen must be provided during the registration to lecielfest@gmail.com</li> \
   <li>No restriction on topic. However topics that are offensive to certain community, religion, gender etc are strictly prohibited and will lead to direct disqualification.</li> \
   <li>The script must be original</li> \
 </ul>");
@@ -218,8 +213,8 @@ $("#event9").on("click",function()
 });
 $("#event10").on("click",function()
 {
-	$(".modal-title").html("Header for Event Ten");
-	$(".modal-body").html("Rules for Event Ten come here");
+	$(".modal-title").html("Rules for Talento");
+	$(".modal-body").html("All the necessary equipments will be provided. ");
 	$(".popupbtn").click();
 });
 $("#event11").on("click",function()
@@ -241,4 +236,26 @@ $("#event11").on("click",function()
   <li>Once uploaded the photograph can be shared using the hashtag #NITPy_PhotoArt for public viewing, but the evaluation will NOT be on the basis of likes, shares and comments.</li> \
 </ul>");
 	$(".popupbtn").click();
+});
+$(window).on("resize scroll",function()
+{
+  //alert("here");
+  //alert($("#homeimg").height());
+  var windowTop = $(window).scrollTop();
+  windowTop += $("")
+  var eventOne = $("#event3").offset();
+  var eventHeight = $("#event3").height();
+  $(".testing1").html(eventHeight);
+  $(".testing3").html(eventOne.top);
+  $(".testing2").html(windowTop);
+  var windowTopToFadeIn = (($("#event1").offset()).top) + $("#event1").height(); 
+  if(windowTop > windowTopToFadeIn)
+  {
+    alert("here");
+    if(!eventOneAnimation)
+    {
+      $("#event1").fadeIn(300);
+      eventOneAnimation=1;
+    }
+  }
 });

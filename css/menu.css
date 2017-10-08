@@ -1,5 +1,5 @@
 
-
+@import url(https://fonts.googleapis.com/css?family=Anton|Muli:300);
 
 .scrollbtn{
   background-color: transparent;
@@ -33,28 +33,17 @@
     -webkit-transform: rotate(-45deg) translate(0, 0);
   }
 }
-0% {
-    transform: rotate(-45deg) translate(0, 0);
-}
-style.css:253
-20% {
-    transform: rotate(-45deg) translate(-10px, 10px);
-}
-style.css:256
-40% {
-    transform: rotate(-45deg) translate(0, 0);
-}
+
 .menu
 {
 	position: fixed;
 	z-index:1001;
 	width: 100%;
 	height: 100%;
-
-	background:rgba(18,9,40,0) ;
-  
+  background:rgba(18,9,40,0) ;
+  height: 100%;
 	display: none;
-
+ 
   
 }
 .menu-text
@@ -67,8 +56,9 @@ style.css:256
   z-index: 1001;
   width: 30%;
   float: left;
-
-  height: 100%;
+  position:relative; 
+  padding-top: 15%;
+  padding-bottom: 30%;
   background-color:rgba(18,9,40,0.8);
 
 }
@@ -96,7 +86,9 @@ style.css:256
   z-index: 1001;
   width: 75%;
   float: left;
+  position:relative; 
 
+  padding-bottom: 30%;
   height: 100%;
 
 }
@@ -301,18 +293,53 @@ style.css:256
   transition-delay: 0s, 0.3s;
 }
 
-.modal-content{
-      top: 15vh;
-    height: 65vh;
-    
-    
+.modal{
+
+  background-color: rgba(0,0,0,0.8);
+
 }
+
+.modal-content{
+  top: 15vh;
+  height: 65vh;
+  background-color: rgba(0,0,0,0.8)
+}
+
+.modal-footer .btn{
+  border-style: none;
+  background-color: black;
+  text-decoration: underline;
+  color: white;
+  outline: none;
+}
+
+.modal-footer .btn:active{
+  background-color: black;
+  outline: none;
+}
+
+.modal-title {
+
+  height: 70px;
+  color: white;
+  font-family:  'Anton', sans-serif ; 
+  font-size: 2em;
+}
+.modal-body {
+    
+  color: white;
+    font-family:  'Muli', sans-serif ; 
+    font-size: 1em;
+}
+
+
+
 @media(max-width: 768px)
  {
     .modal-content{
-      top: 15vh;
+    top: 15vh;
     height: 65vh;
-        width: 74vw;
+    /* width: 74vw; */
 }
  }
 
