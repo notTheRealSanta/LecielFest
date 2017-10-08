@@ -15,12 +15,12 @@ else{$(".scrollhome").show()}});$("#menu-half").on("click",function()
 else{return!1}}
 $("#event1").on("click",function()
 {$(".modal-title").html("Rules for PULSE");$(".modal-body").html("<ul> \
-  <li>Time limit: </li> \
+  <li>Time limit: 5</li> \
 </ul>");$(".popupbtn").click()});$("#event2").on("click",function()
 {$(".modal-title").html("Rules for SYMPHONY");$(".modal-body").html("<ul> \
   <li>Time limit: 5</li> \
 </ul>");$(".popupbtn").click()});$("#event3").on("click",function()
-{$(".modal-title").html("Rules for MÉLOPACTÉ");$(".modal-body").html("<ul> \
+{$(".modal-title").html("Rules for Mï¿½LOPACTï¿½");$(".modal-body").html("<ul> \
   <li>Max number per group/band: 10</li> \
   <li>Time limit: 10mins + 5min ( setup )</li> \
   <li>Prior information about group/band</li> \
