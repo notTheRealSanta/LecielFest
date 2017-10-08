@@ -1,17 +1,30 @@
 var flag=0;
-var clicked=1;
+var contentanimationflag1=0;
+var contentanimationflag2=0;
+var contentanimationflag3=0;
+var clicked=1;	
+var contentPartOne = $(".contentpart1").position();
+var contentPartTwo = $(".contentpart2").position();
+var contentPartThree = $(".contentpart3").position();
+var contentOneHeight = $(".contentpart1").height();
+var contentTwoHeight = $(".contentpart2").height();
+var contentThreeHeight = $(".contentpart3").height();
+//$(".testing1").html(contentPartOne.top + " " + contentPartOne.left);
+//$(".testing3").html(contentPartTwo.top + " " + contentPartTwo.left);
+$(".contentpart1").addClass("displayhide");
+$(".contentpart2").addClass("displayhide");
+$(".contentpart3").addClass("displayhide");
 $(".c-hamburger").on("click",function()
 {
       if(!flag)
       {
-        $(".menu").show("slide",{direction: "left"},400);
-       // $("menu-text").hide();
+        $(".menu").show("slide",{direction: "left"},500);
         flag=1;
-       $(".menu-text").show("slide",{direction: "right"},500).animate({fontSize: '2em'},"slow");
+       $(".menu-text").show("slide",{direction: "right"},700).animate({fontSize: '2em'},"slow");
       }
       else
       {
-        $(".menu").hide("slide",{direction: "left"},400);
+        $(".menu").hide("slide",{direction: "left"},500);
         flag=0;
       }
 });
@@ -46,21 +59,6 @@ $(".scrollbtn").on('click', function(e) {
        scrollTop: ($(target).offset().top)
      }, 800);
 });
-$("#content1").hover(function()
-{
-  $("#content1").find('p').hide();
-  $(".popup1").show();
-},function()
-{
-  $(".popup1").hide();
-});
-$("#content2").hover(function()
-{
-  $(".popup2").show();
-},function()
-{
-  $(".popup2").hide();
-});
 $(window).scroll("resize scroll",function()
 {
   var homeBottom = $("#homeimg").height();
@@ -75,6 +73,44 @@ $(window).scroll("resize scroll",function()
   {
     $(".scrollhome").show();
   }
+});
+$(window).scroll("scroll",function()
+{
+	var windowBottom = $(window).scrollTop() + $("#homeimg").height();
+	if(contentanimationflag1==0)
+	{
+		
+		var windowCord = windowBottom - contentOneHeight;
+		//$(".testing2").html(windowCord);
+		if(windowCord > contentPartOne.top)
+		{
+			
+			$(".contentpart1").show("slide",{direction: "left"},600);
+			contentanimationflag1=1;
+		}
+	}
+	if(contentanimationflag2==0)
+	{
+		
+		var windowCord = windowBottom - contentTwoHeight;
+		if(windowCord > contentPartTwo.top)
+		{
+			
+			$(".contentpart2").show("slide",{direction: "right"},600);
+			contentanimationflag2=1;
+		}
+	}
+	if(contentanimationflag3==0)
+	{
+		
+		var windowCord = windowBottom - contentTwoHeight;
+		if(windowCord > contentPartThree.top)
+		{
+			
+			$(".contentpart3").show("slide",{direction: "down"},600);
+			contentanimationflag3=1;
+		}
+	}
 });
 $("#menu-half").on("click",function()
 {
@@ -91,10 +127,6 @@ $(window).on("keydown",function(e)
     $(".c-hamburger").click();
   }
 });
-
-
-
-
 
 //checkbox js
 
@@ -121,108 +153,15 @@ function detectmob() {
     return false;
   }
 }
-/*Content and rules Hover*/
-$(".content1_part1").hover(function()
+$("#event1").on("click",function()
 {
-  if(!detectmob())
-  {
-    $("#content2").hide();
-    $(".popup1_1").show();
-  }
-},function()
-{
-  if(!detectmob())
-  {
-    $(".popup1_1").hide();
-    $("#content2").show();
-  }
+	$(".popupbtn").click();
 });
-$(".content1_part2").hover(function()
+$(".contentpart2").on("click",function()
 {
-  if(!detectmob())
-  {
-    $("#content2").hide();
-    $(".popup1_2").show();
-  }
-},function()
-{
-  if(!detectmob())
-  {
-    $(".popup1_2").hide();
-    $("#content2").show();
-  }
+	$(".popupbtn").click();
 });
-$(".content2_part1").hover(function()
+$(".contentpart3").on("click",function()
 {
-  if(!detectmob())
-  {
-    $("#content1").hide();
-    $(".popup2_1").show();
-  }
-},function()
-{
-  if(!detectmob())
-  {
-    $(".popup2_1").hide();
-    $("#content1").show();
-  }
-});
-$(".content2_part2").hover(function()
-{
-  if(!detectmob())
-  {
-    $("#content1").hide();
-    $(".popup2_2").show();
-  }
-},function()
-{
-  if(!detectmob())
-  {
-    $(".popup2_2").hide();
-    $("#content1").show();
-  }
-});
-$(".modalclosebtn").on("click",function()
-{ 
-  if(detectmob())
-  {
-    $(".modal-title").html("");
-    $(".modal-body").html("");
-  }
-});
-$(".content1_part1").on("click",function()
-{
-  if(detectmob())
-  {
-    $(".modal-title").html("Rules for Event 1 of 1:");
-    $(".modal-body").html("<p>Here <br> the rules <br> for event 1 of 1 <br></p>")
-    $(".popupbtn").click();
-  }
-});
-$(".content1_part2").on("click",function()
-{
-  if(detectmob())
-  {
-    $(".modal-title").html("Rules for Event 2 of 1:");
-    $(".modal-body").html("<p>Here <br> the rules <br> for event 2 of 1 <br></p>")
-    $(".popupbtn").click();
-  }
-});
-$(".content2_part1").on("click",function()
-{
-  if(detectmob())
-  {
-    $(".modal-title").html("Rules for Event 1 of 2:");
-    $(".modal-body").html("<p>Here <br> the rules <br> for event 1 of 2 <br></p>")
-    $(".popupbtn").click();
-  }
-});
-$(".content2_part2").on("click",function()
-{
-  if(detectmob())
-  {
-    $(".modal-title").html("Rules for Event 2 of 2:");
-    $(".modal-body").html("<p>Here <br> the rules <br> for event 2 of 2 <br></p>")
-    $(".popupbtn").click();
-  }
+	$(".popupbtn").click();
 });

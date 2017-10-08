@@ -3,49 +3,161 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <link rel="stylesheet" type="text/css" href="css/menu.css">
 <link rel="stylesheet" type="text/css" href="css/content.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link href="https://fonts.googleapis.com/css?family=Anton|Muli:300" rel="stylesheet">
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrapcss/bootstrap.css"> -->
 
-</head>
-<title>
+<link rel="shortcut icon" href="fav.png" type="image/png"  /> 
+<title>Leciel Fest
 </title>
-<body background="BG.png">
-<div class="container-fluid">
- <div class="row">
-  <div class="menu">
-        <div class="menu-text">
-          
-          <button class="btn-1 scrollbtn" href="#homeimg"><div class="span">Home</div></button>        
-          <br>
-          <button class="btn-1 scrollbtn" href="#register"><div class="span">Register</div></button>
-          <br>
-          <button class="btn-1 scrollbtn" href="#contact"><div class="span">Contact Us</div></button>
-          <br>
+<style type="text/css">
+  .displayhide
+  {
+    display: none;
+  }
+</style>
+</head>
 
-        </div>
-        <div id="menu-half"></div>
-	</div>
+<body background="images/BG.png">
+  <!-- <p class="testing1" style="position: fixed; color: red"></p>
+  <br>
+  <p class="testing2" style="position: fixed; color: red;"></p>
+  <br>
+  <p class="testing3" style="position: fixed; color: red;"></p> -->
+  <div class="container-fluid">
+   <div class="row" id="homeimg" style="height: 100vh;">
+    <div class="menu">
+          <div class="menu-text">
+            
+            <button class="btn-1 scrollbtn" href="#homeimg"><div class="span">Home</div></button>        
+            <br>
+            <button class="btn-1 scrollbtn" href=".content1"><div class="span">Events</div></button>
+            <br>
+            <button class="btn-1 scrollbtn" href="#register"><div class="span">Register</div></button>
+            <br>
+            <button class="btn-1 scrollbtn" href="#contact"><div class="span">Contact Us</div></button>
+            <br>
 
-                <button class="c-hamburger c-hamburger--htx">
-                <div id="span-hamburger">toggle menu</div>
-                </button>
+          </div>
+          <div id="menu-half"></div>
+  	</div>
 
-  
-    <div >
-    <div class="scrollhome">
-    <button href="#register" class="scrollbtn1 scrollbtn "></button>
-    </div>
+                  <button class="c-hamburger c-hamburger--htx">
+                  <div id="span-hamburger">toggle menu</div>
+                  </button>
+
     
-    </div>
- 
+      <div >
+      <div class="scrollhome">
+      <button href=".content2" class="scrollbtn1 scrollbtn "></button>
+      </div>
+      
+      </div>
+   
+    
+   </div> 
+
+   <button style="display: none;" type="button" class="btn btn-info btn-lg popupbtn" data-toggle="modal" data-target="#myModal">Open Modal</button>
   
- </div> 
- </div>
+   <div class="row content2" >
+      <br> <br> <br> <br>
+      <div class="col-sm-3 col-xs-12"> 
+        <!-- EVENT1 -->
+          <div  id="event1">
+            <div style = "width: 40%;height : 100%;float:left; " ><img class ="img-responsive" style = " margin-left: 5%; "  src = "images/solo_s.png"/></div>
+            <div class ="title_text" style = "float:right; text-align :right;">PULSE</div>
+            <div class ="info_text" style = "float: right; text-align : right;" >Solo singing</div>       
+          </div>
+        <!-- EVENT2 -->
+          <div id="event2">
+            <div style = "width: 40%;height : 100%;float:left; " ><img class ="img-responsive"  style = " margin-left: 5%; " src = "images/dual_s.png"/></div>
+            <div class ="title_text" style = "float:right; text-align :right;">SYMPHONY</div>
+            <div class ="info_text" style = "float: right; text-align : right;" >Duet singing</div>       
+          </div>
+      </div>
+
+      <div class="col-sm-3 col-xs-12">
+        <!-- EVENT3 -->
+         <div id="event3">
+          <div style = "width: 100%;height : 60%;float:left; " ><img class ="img-responsive" style = " margin : auto;  "  src = "images/band.png"/></div>
+          <div class ="title_text" style = " width: 90%; margin : auto; text-align :center;">MÉLOPACTÉ</div>
+          <div class ="info_text" style = "  width: 90%; margin : auto;text-align : center;" >Band</div>
+         </div> 
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <!-- EVENT4 -->
+        <div id="event4">
+            <div style = "width: 100%;height : 60%;float:left; " ><img class ="img-responsive" style = " margin : auto;  "  src = "images/group_d.png"/></div>
+            <div class ="title_text" style = " width: 90%; margin : auto; text-align :center;">SQUADROP</div>
+            <div class ="info_text" style = "  width: 90%; margin : auto;text-align : center;" >Group dancing</div>
+        </div> 
+      </div>
+      <div class="col-sm-3 col-xs-12"> 
+        <!-- EVENT5 -->
+        <div  id="event5">
+            <div style = "width: 40%;height : 100%;float:left; " ><img class ="img-responsive" style = " margin-left: 5%; "  src = "images/event_icon_pc.png"/></div>
+            <div class ="title_text" style = "float:right; text-align :right;">STOMP</div>
+            <div class ="info_text" style = "float: right; text-align : right;" >Solo dancing</div>
+        </div>
+        <!-- EVENT6 -->
+        <div id="event6">
+            <div style = "width: 40%;height : 100%;float:left; " ><img class ="img-responsive"  style = " margin-left: 5%; " src = "images/event_icon_pc.png"/></div>
+            <div class ="title_text" style = "float:right; text-align :right; ">PASdeDEUX </div>
+            <div class ="info_text" style = "float: right; text-align : right;" >Duet singing</div> 
+        </div>
+      </div>
+    </div>   
+
+    <!-- this is the big box -->
+
+    <div class="row content2" >
+  
+      <div class="col-sm-4 col-xs-12"> 
+        <!-- EVENT7 -->
+          <div  id="event7">
+              <div style = "width: 35%;height : 100%;float:left; " ><img class ="img-responsive" style = " margin-left: 5%; "  src = "images/event_icon_pc.png"/></div>
+              <div class ="title_text" style = " width: 60%; margin-top: 5%;float:right; text-align :right;">LIGHT CAMERA ACTION</div>
+              <div class ="info_text" style = "float: right; text-align : right;" >Short flims</div>
+          </div>
+        <!-- EVENT8 -->
+          <div id="event8">
+              <div style = "width: 35%;height : 100%;float:left; " ><img class ="img-responsive" style = " margin-left: 5%; "  src = "images/event_icon_pc.png"/></div>
+              <div class ="title_text" style = " width: 60%;float:right; text-align :right;">MASK</div>
+              <div class ="info_text" style = "float: right; text-align : right;" >Skits</div>
+          </div>
+      </div>
+      <div class="col-sm-4 col-xs-12"> 
+         <!-- EVENT9 -->
+          <div  id="event9">
+              <div style = "width: 35%;height : 100%;float:left; " ><img class ="img-responsive" style = " margin-left: 5%; "  src = "images/event_icon_pc.png"/></div>
+              <div class ="title_text" style = " width: 60%;float:right; text-align :right;">STROKE</div>
+              <div class ="info_text" style = "float: right; text-align : right;" >Painting</div>
+          </div>
+          <!-- EVENT10 -->
+          <div id="event10">
+              <div style = "width: 35%;height : 100%;float:left; " ><img class ="img-responsive" style = " margin-left: 5%; "  src = "images/event_icon_pc.png"/></div>
+              <div class ="title_text" style = " width: 60%;float:right; text-align :right;">TALENTO</div>
+              <div class ="info_text" style = "float: right; text-align : right;" >Craft Exb.</div>
+          </div>
+        </div>
+      <div class="col-sm-4 col-xs-12">
+         <!-- EVENT11 -->
+        <div id="event11">
+            <div style = "width: 100%;height : 50%;float:left; " ><img class ="img-responsive" style = " margin : auto;  "  src = "images/event_icon_pc.png"/></div>
+            <div class ="title_text" style = " width: 90%; margin : auto; text-align :center;">ONLINE EVENTS</div>
+            <div class ="info_text" style = "  width: 90%; margin : auto; text-align : center;" >Photography</div>
+            <div class ="info_text" style = "  width: 90%; margin : auto;text-align : center;" >Musically</div>
+            <div class ="info_text" style = "  width: 90%; margin : auto;text-align : center;" >Caption</div>
+        </div> 
+     </div>
+    </div>   
+         
+   </div>
+  </div>
   
 
 
@@ -53,7 +165,7 @@
 <div class="row" id="register_page" style="height: 100vh;margin-top: 70%;">
 
 <div >
-  <div id="register" style=" height: 20vh; ">
+  <div id="register" style="height: 20vh; ">
       <div  style=" text-align:center; font-weight: 300; height: 20%; font-family: 'Verdana'; font-size:2em; color: white">Registration coming soon!
       </div>
   </div>
@@ -70,11 +182,28 @@
   	</div>
   </div> 
 </div>
-
+          <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+  
+<script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
 </div>
 
 </body>
