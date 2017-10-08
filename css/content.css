@@ -257,7 +257,7 @@ body
     margin-right: 10px;
     color: white;
     font-family:  'Anton', sans-serif ; 
-    font-size: 2.8vw;
+    font-size: 2.5vw;
 }
 .info_text {
     width:55% ;
@@ -294,4 +294,10 @@ body
         font-family: 'Muli', sans-serif;
         font-size: 5vw;
     }
+}
+
+
+#register_page {
+    padding-left: 20px;
+    padding-right: 20px;
 }

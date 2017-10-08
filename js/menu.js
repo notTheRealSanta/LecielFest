@@ -1,19 +1,4 @@
 var flag=0;
-var contentanimationflag1=0;
-var contentanimationflag2=0;
-var contentanimationflag3=0;
-var clicked=1;	
-var contentPartOne = $(".contentpart1").position();
-var contentPartTwo = $(".contentpart2").position();
-var contentPartThree = $(".contentpart3").position();
-var contentOneHeight = $(".contentpart1").height();
-var contentTwoHeight = $(".contentpart2").height();
-var contentThreeHeight = $(".contentpart3").height();
-//$(".testing1").html(contentPartOne.top + " " + contentPartOne.left);
-//$(".testing3").html(contentPartTwo.top + " " + contentPartTwo.left);
-$(".contentpart1").addClass("displayhide");
-$(".contentpart2").addClass("displayhide");
-$(".contentpart3").addClass("displayhide");
 $(".c-hamburger").on("click",function()
 {
       if(!flag)
@@ -74,44 +59,6 @@ $(window).scroll("resize scroll",function()
     $(".scrollhome").show();
   }
 });
-$(window).scroll("scroll",function()
-{
-	var windowBottom = $(window).scrollTop() + $("#homeimg").height();
-	if(contentanimationflag1==0)
-	{
-		
-		var windowCord = windowBottom - contentOneHeight;
-		//$(".testing2").html(windowCord);
-		if(windowCord > contentPartOne.top)
-		{
-			
-			$(".contentpart1").show("slide",{direction: "left"},600);
-			contentanimationflag1=1;
-		}
-	}
-	if(contentanimationflag2==0)
-	{
-		
-		var windowCord = windowBottom - contentTwoHeight;
-		if(windowCord > contentPartTwo.top)
-		{
-			
-			$(".contentpart2").show("slide",{direction: "right"},600);
-			contentanimationflag2=1;
-		}
-	}
-	if(contentanimationflag3==0)
-	{
-		
-		var windowCord = windowBottom - contentTwoHeight;
-		if(windowCord > contentPartThree.top)
-		{
-			
-			$(".contentpart3").show("slide",{direction: "down"},600);
-			contentanimationflag3=1;
-		}
-	}
-});
 $("#menu-half").on("click",function()
 {
 	if(flag)
@@ -155,13 +102,143 @@ function detectmob() {
 }
 $("#event1").on("click",function()
 {
+	$(".modal-title").html("Rules for PULSE");
+	$(".modal-body").html("<ul> \
+  <li>Time limit: </li> \
+  <li>Types allowed(Carnatic,Hindustani,English)</li> \
+  <li>Instruments allowed: </li> \
+</ul>");
 	$(".popupbtn").click();
 });
-$(".contentpart2").on("click",function()
+$("#event2").on("click",function()
 {
+	$(".modal-title").html("Rules for SYMPHONY");
+	$(".modal-body").html("<ul> \
+  <li>Time limit: </li> \
+  <li>Types allowed(Carnatic,Hindustani,English)</li> \
+  <li>Instruments allowed: </li> \
+</ul>");
 	$(".popupbtn").click();
 });
-$(".contentpart3").on("click",function()
+$("#event3").on("click",function()
 {
+	$(".modal-title").html("Rules for MÉLOPACTÉ");
+	$(".modal-body").html("<ul> \
+  <li>Max number per group/band: </li> \
+  <li>Time limit: </li> \
+  <li>Prior information about group/band</li> \
+  <li>After Registration a small piece of information about the band must be sent to: email@gmail.com</li> \
+  <li>Pre recorded sounds not allowed</li> \
+  <li>Types of instruments allowed: </li> \
+  <li>Band members must be from within the same college </li> \
+  <li>Any extra weightage: </li> \
+  <li>A person can perform for only one band</li> \
+  <li>Jusges decision are final and will not be available for review.</li> \
+  <li>Any instrument provided by college: </li> \
+  <li>Obscenity on stage strictly prohibited</li> \
+</ul>");
+	$(".popupbtn").click();
+});
+$("#event4").on("click",function()
+{
+	$(".modal-title").html("Rules for SQUADROP");
+	$(".modal-body").html("<ul> \
+  <li> Props can be used during the dance. But the contestants has to arrange by themselves</li> \
+  <li>Max time limit: 8 min</li> \
+  <li>Songs have to be provided 1 hour before the commencement of the program</li> \
+  <li>There is no restriction on the language and the form of dance.</li> \
+  <li>A person participating in either duet or solo can perform in group dance also.</li> \
+  <li>All the participants must belong to the same college.</li> \
+</ul>");
+	$(".popupbtn").click();
+});
+$("#event5").on("click",function()
+{
+	
+	$(".modal-title").html("Rules for STOMP");
+	$(".modal-body").html("<ul> \
+  <li>Props can be used during the dance. But the contestants have to arrange by themselves</li> \
+  <li>Max time limit: 3 min</li> \
+  <li>Songs have to be provided 1 hour before the commencement of the program</li> \
+  <li>There is no restriction on the language and the form of dance</li> \
+  <li>A person who is participating in solo can perform in group dance also. But they are not allowed to participate in duet dance.</li> \
+</ul>");
+	$(".popupbtn").click();
+});
+$("#event6").on("click",function()
+{
+	$(".modal-title").html("Rules for PASdeDEUX");
+	$(".modal-body").html("<ul> \
+  <li>Both the participants should be of same college</li> \
+  <li>Props can be used during the dance. But the contestants has to arrange by themselves</li> \
+  <li>Max time limit: 3-5 min</li> \
+  <li>There is no restriction on the language and the form of dance.</li> \
+  <li>Songs have to be provided 1 hour before the commencement of the program.</li> \
+  <li>A person who is participating in duet can perform in group dance also. But they are not allowed to participate in solo dance.</li> \
+</ul>");
+	$(".popupbtn").click();
+});
+$("#event7").on("click",function()
+{
+	$(".modal-title").html("Rules for Light Camera Action");
+	$(".modal-body").html("<ul> \
+  <li>No restriction on topic. However topics that are offensive to certain community, religion, gender etc are strictly prohibited and will lead to direct disqualification.</li> \
+  <li>Max time limit: 15 min</li> \
+  <li>The language must be English only</li> \
+  <li>A brief description of the topic chosen must be provided during the registration to email@gmail.com</li> \
+  <li>The script must be original</li> \
+</ul>");
+	$(".popupbtn").click();
+});
+$("#event8").on("click",function()
+{
+	$(".modal-title").html("Rules for MASK");
+	$(".modal-body").html("<ul> \
+  <li>Maximum of 12 participants per team ( 10 on stage and 2 back stage)</li> \
+  <li>Language must be English only.</li> \
+  <li>Max time limit: 15 mins</li> \
+  <li>A brief description of the topic chosen must be provided during the registration to email@gmail.com</li> \
+  <li>No restriction on topic. However topics that are offensive to certain community, religion, gender etc are strictly prohibited and will lead to direct disqualification.</li> \
+  <li>The script must be original</li> \
+</ul>");
+	$(".popupbtn").click();
+});
+$("#event9").on("click",function()
+{
+	$(".modal-title").html("Rules for STROKE");
+	$(".modal-body").html("<ul> \
+  <li>This event is open for both school (senior secondary level) and college students</li> \
+  <li>The topic will be provided on spot. However, 10 minutes will be provided for planning</li> \
+  <li>Max time limit: 1 hour</li> \
+  <li>No restriction on type of colors used (water colors, crayons, pencil shading , oil pastels). However use of sketch pens are only allowed for highlighting but the entire sketch should not be of sketch colors.</li> \
+  <li>The participants must bring their own stationaries</li> \
+  <li>A2 size sheet will be provided at the venue</li> \
+</ul>");
+	$(".popupbtn").click();
+});
+$("#event10").on("click",function()
+{
+	$(".modal-title").html("Header for Event Ten");
+	$(".modal-body").html("Rules for Event Ten come here");
+	$(".popupbtn").click();
+});
+$("#event11").on("click",function()
+{
+	$(".modal-title").html("Rules for Online Events");
+	$(".modal-body").html("<ul> \
+  <li>Photographs are to submit their photographs to the given link. ( give link)</li> \
+  <li> While submitting the photograph the following to be mentioned \
+    <ul> \
+      <li>Caption</li>  \
+      <li> Date,time and place of photograph</li> \
+      <li>Details of photographer(Name,College,Branch,Year)</li> \
+    </ul> \
+  </li> \
+  <li>The photograph must be clicked within the time span of 25th September to 10th October, and must be submitted before 11th October.</li> \
+  <li>Evaluation will be done on the basis of creativity, Caption and originality of the photograph. </li> \
+  <li>Mixing of photograph using Photoshop or any other software is prohibited</li> \
+  <li>Photograph must be original. If the photograph is not found to be original, the photographer will be disqualaified.</li> \
+  <li>Once uploaded the photograph can be shared using the hashtag #NITPy_PhotoArt for public viewing, but the evaluation will NOT be on the basis of likes, shares and comments.</li> \
+</ul>");
 	$(".popupbtn").click();
 });
