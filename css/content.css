@@ -12,6 +12,7 @@ background-image: url(../images/BG.png);
 background-size: cover;
 background-repeat: no-repeat;
 background-position-x:center;
+background-color: #22114e;
 }
 
 @media(max-width: 768px)
@@ -19,6 +20,7 @@ background-position-x:center;
   body
   {
     background-image: url(../images/BG_mobile.png);
+    background-color: #22114e;
   }
 }
 
@@ -331,8 +333,25 @@ body
     padding-right: 20px;
 }
 
+.whycss {
+    font-family :'Muli', sans-serif ;
+     font-size : 2em; 
+     color: white; 
+     margin-top: 5%;
+     color: white; 
+     margin-left: 20% ;
+}
 
-
+@media ( max-width: 768px) {
+    .whycss {
+        font-family :'Muli', sans-serif ;
+         font-size : 1.8em; 
+         color: white; 
+         margin-top: 5%;
+         color: white; 
+         margin-left: 0% ;
+    }
+}
 
 .screen1
 {

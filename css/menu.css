@@ -343,13 +343,25 @@
 }
 
 .btn-pink {
-  width: 30%;
+  width: 300px;
   background-color: rgba(170, 2, 89, 0.7);
   border-style: none;
   font-family: 'Muli', sans-serif;
   font-size: 2em;
+  outline: none;
+   
 }
-.btn-pink:active
+
+.btn-pink:hover {
+  background-color: rgba(170, 2, 89, 0.9) !important;
+}
+.btn-pink:active {
+  background-color: rgba(170, 2, 89, 0.9) !important;
+}
+.btn-pink:visited {
+  background-color: rgba(170, 2, 89, 0.9) !important;
+}
+
 
 @media(max-width: 768px)
  {
