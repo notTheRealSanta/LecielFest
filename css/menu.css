@@ -329,8 +329,27 @@
     font-family:  'Muli', sans-serif ; 
     font-size: 1em;
 }
+.modal-footer {
 
+  color : white;
+  text-align: left;
+  font-family : 'Muli', sans-serif ;
+  font-size: 2em;
 
+}
+
+.googleform {
+   width: 100%
+}
+
+.btn-pink {
+  width: 30%;
+  background-color: rgba(170, 2, 89, 0.7);
+  border-style: none;
+  font-family: 'Muli', sans-serif;
+  font-size: 2em;
+}
+.btn-pink:active
 
 @media(max-width: 768px)
  {
