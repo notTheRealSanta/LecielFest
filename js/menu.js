@@ -31,9 +31,9 @@ var eventNineHeight = $("#event9").height();
 var eventTenHeight = $("#event10").height();
 var eventElevenHeight = $("#event11").height();
 
-$(".testing1").html(eventOneTop);
+/*$(".testing1").html(eventOneTop);
 $(".testing2").html(eventFiveTop);
-$(".testing3").html(eventThreeTop);
+$(".testing3").html(eventThreeTop);*/
 $("#event1").addClass("displaynone");
 $("#event2").addClass("displaynone");
 $("#event3").addClass("displaynone");
@@ -58,6 +58,10 @@ $(".c-hamburger").on("click",function()
         $(".menu").hide("slide",{direction: "left"},500);
         flag=0;
       }
+});
+$(document).ready(function()
+{
+	$(window).scrollTop(0);
 });
 (function() 
 {
@@ -86,7 +90,7 @@ $(".scrollbtn").on('click', function(e) {
       $(".c-hamburger").click();
      }
      var target = $(this).attr('href');
-     $('html, body').delay(100).animate({
+     $('html, body').delay(200).animate({
        scrollTop: ($(target).offset().top)
      }, 800);
 });
@@ -146,23 +150,48 @@ function detectmob() {
     return false;
   }
 }
-$("#event1").on("click",function()
+$("#reg_btn").on("click",function()
+{
+	$(".modal-title").html("Register Now!");
+	$(".modal-body").html('<iframe class=googleform frameborder=0 height=500 marginheight=0 marginwidth=100 src="https://docs.google.com/forms/d/e/1FAIpQLSd43yjKJr0Vehf454k6bqfoVSGLa_syoUVovumybZWhHLpmIQ/viewform?embedded=true">Loading...</iframe><div style=font-size:2em>Pay through Online SBI at : <a href=https://www.onlinesbi.com/prelogin/institutiontypedisplay.htm style=background-color:#fff target=_blank>Click Here</a></div>');
+});
+$("#event1").on("click",function() //event1 pulse solo singing
 {
 	$(".modal-title").html("Rules for PULSE");
 	$(".modal-body").html("<ul> \
-  <li>Time limit: </li> \
+	<li>Time limit: </li> \
+  		<ul> \
+			<li>Prelims: 2 min</li> \
+			<li>Finals: max 5 min</li> \
+		</ul> \
+	<li>Types allowed ( Carnatic, Hindustani, western)</li> \
+	<li>Insruments allowed</li> \
+	<li>No abusive words in the music</li> \
+	<li>Instrumental karaoke is allowed. However vocal karaoke is not allowed.<li> \
+	<li>No provocative attire </li> \
+	<li>Participants should possess their college id card while reporting for the event.</li> \
+	<li>proof  for registering  for the event must be produced at the time of reporting.</li> \
+	<li>No refund will be given</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event2").on("click",function()
+$("#event2").on("click",function() //event2 symphony duet singing
 {
 	$(".modal-title").html("Rules for SYMPHONY");
 	$(".modal-body").html("<ul> \
-  <li>Time limit: 5</li> \
+	<li>Both the participants should be of same college</li> \
+	<li>Types allowed ( Carnatic, Hindustani, western)</li> \
+	<li>Instruments allowed</li> \
+	<li>No abusive words in the music</li> \
+	<li>Instrumental karaoke is allowed .however vocal karaoke is not allowed.</li> \
+	<li>No provocative attire </li> \
+	<li>Participants should possess their college id card while reporting for the event.</li> \
+	<li>proof  for registering  for the event must be produced at the time of reporting.</li> \
+	<li>No refund will be given</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event3").on("click",function()
+$("#event3").on("click",function() // Group Singing Band event3
 {
 	$(".modal-title").html("Rules for MÉLOPACTÉ");
 	$(".modal-body").html("<ul> \
@@ -176,61 +205,87 @@ $("#event3").on("click",function()
   <li>A person can perform for only one band</li> \
   <li>Judges decision are final and will not be available for review.</li> \
   <li>Instrument provided : Keyboard, Electric guitar, Electric Bass and Drum kit. </li> \
+  <li>Obscenity on stage strictly prohibited</li> \
+  <li>Forging of identity will disqualify the group.</li> \
+  <li>Participants has to bring their college id cards as well as the proof for the registration while reporting.</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event4").on("click",function()
+$("#event4").on("click",function() //Group Dancing event4
 {
 	$(".modal-title").html("Rules for SQUADROP");
 	$(".modal-body").html("<ul> \
-  <li> Props can be used during the dance. But the contestants has to arrange by themselves</li> \
-  <li>Max time limit: 8 min</li> \
-  <li>Songs have to be provided 1 hour before the commencement of the program</li> \
-  <li>There is no restriction on the language and the form of dance.</li> \
-  <li>A person participating in either duet or solo can perform in group dance also.</li> \
-  <li>All the participants must belong to the same college.</li> \
+	<li>Props can be used during the dance. But the contestants has to arrange by themselves.However props like fire,water etc are not allowed.</li> \
+	<li>Max time limit: 10min</li> \
+	<li>Additional 2 min will be given to the participants to arrange the props.</li> \
+	<li>Songs have to be provided 1 hour before the commencement of the program</li> \
+	<li>There is no restriction on the language and the form of dance.</li> \
+	<li>No provocative attire</li> \
+	<li>Forging of identity will disqualify the participants.</li> \
+	<li>All the participants must belong to the same college.</li> \
+	<li>Participants should possess their college id card while reporting for the event.</li> \
+	<li>Proof  for registering  for the event must be produced at the time of reporting.</li> \
+	<li>No refund will be given.</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event5").on("click",function()
+$("#event5").on("click",function() //event5 solo Dancing
 {
 	
 	$(".modal-title").html("Rules for STOMP");
 	$(".modal-body").html("<ul> \
-  <li>Props can be used during the dance. But the contestants have to arrange by themselves</li> \
-  <li>Max time limit: 5 min</li> \
+  <li>Props can be used during the dance. But the contestants have to arrange it by themselves.However props like fire, water etc are not allowed</li> \
+  <li>Max time limit: </li> \
+  		<ul> \
+  			<li>Prelims: 3 min</li> \
+  			<li>Finals: max 5 min</li> \
+  		</ul> \
+  <li>Additional 2 minutes will be given to the participants for setting their prop.</li> \
   <li>Songs have to be provided 1 hour before the commencement of the program</li> \
   <li>There is no restriction on the language and the form of dance</li> \
-  <li>A person who is participating in solo can perform in group dance also. But they are not allowed to participate in duet dance.</li> \
+  <li>No abusive words in the music</li> \
+  <li>No provocative attire</li> \
+  <li>Participants should possess their college id card while reporting for the event.</li> \
+  <li>Proof  for registering  for the event must be produced at the time of reporting.</li> \
+  <li>No refund will be given</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event6").on("click",function()
+$("#event6").on("click",function() //event6 duet dancing
 {
 	$(".modal-title").html("Rules for PASdeDEUX");
 	$(".modal-body").html("<ul> \
   <li>Both the participants should be of same college</li> \
   <li>Props can be used during the dance. But the contestants has to arrange by themselves</li> \
-  <li>Max time limit: 5 min</li> \
+  <li>Max time limit: 3-5 min</li> \
+  <li>Additional 2 min will be given for arranging the </li> \
   <li>There is no restriction on the language and the form of dance.</li> \
   <li>Songs have to be provided 1 hour before the commencement of the program.</li> \
-  <li>A person who is participating in duet can perform in group dance also. But they are not allowed to participate in solo dance.</li> \
+  <li>No abusive words in the music.</li> \
+  <li>No provocative attire</li> \
+  <li>Participants should possess their college id card while reporting for the event.</li> \
+  <li>Proof  for registering  for the event must be produced at the time of reporting.</li> \
+  <li>No refund will be given</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event7").on("click",function()
+$("#event7").on("click",function() //light camera action  event7
 {
 	$(".modal-title").html("Rules for Light Camera Action");
 	$(".modal-body").html("<ul> \
   <li>No restriction on topic. However topics that are offensive to certain community, religion, gender etc are strictly prohibited and will lead to direct disqualification.</li> \
   <li>Max time limit: 15 min</li> \
-  <li>The language must be English only</li> \
+  <li>The language preffered is English.however other languages are also allowed only if there is English subtitles.</li> \
   <li>A brief description of the topic chosen must be provided during the registration to lecielfest@gmail.com</li> \
   <li>The script must be original</li> \
+  <li>Forging of identity will disqualify the participants.</li> \
+  <li>Participants should possess their college id card while reporting for the event.</li> \
+  <li>Proof  for registering  for the event must be produced at the time of reporting.</li> \
+  <li>No refund will be given</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event8").on("click",function()
+$("#event8").on("click",function() //event8 Mask Skit
 {
 	$(".modal-title").html("Rules for MASK");
 	$(".modal-body").html("<ul> \
@@ -240,55 +295,42 @@ $("#event8").on("click",function()
   <li>A brief description of the topic chosen must be provided during the registration to lecielfest@gmail.com</li> \
   <li>No restriction on topic. However topics that are offensive to certain community, religion, gender etc are strictly prohibited and will lead to direct disqualification.</li> \
   <li>The script must be original</li> \
+  <li>No provocative attire </li> \
+  <li>Forging of identity will disqualify the participants.</li> \
+  <li>Participants should possess their college id card while reporting for the event.</li> \
+  <li>Proof  for registering  for the event must be produced at the time of reporting.</li> \
+  <li>No refund will be given</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event9").on("click",function()
+$("#event9").on("click",function() // event9 Stoke
 {
 	$(".modal-title").html("Rules for STROKE");
 	$(".modal-body").html("<ul> \
   <li>This event is open for both school (senior secondary level) and college students</li> \
   <li>The topic will be provided on spot. However, 10 minutes will be provided for planning</li> \
-  <li>Max time limit: 1 hour</li> \
+  <li>Max time limit: 2 hour</li> \
   <li>No restriction on type of colors used (water colors, crayons, pencil shading , oil pastels). However use of sketch pens are only allowed for highlighting but the entire sketch should not be of sketch colors.</li> \
   <li>The participants must bring their own stationaries</li> \
   <li>A2 size sheet will be provided at the venue</li> \
 </ul>");
 	$(".popupbtn").click();
 });
-$("#event10").on("click",function()
+$("#event10").on("click",function() //event10 Talento
 {
 	$(".modal-title").html("Rules for Talento");
 	$(".modal-body").html("All the necessary equipments will be provided. ");
 	$(".popupbtn").click();
 });
-$("#event11").on("click",function()
+$("#event11").on("click",function() //Online events event11
 {
 	$(".modal-title").html("Rules for Online Events");
-	$(".modal-body").html("<ul> \
-  <li>Photographs are to submit their photographs to the given link. ( give link)</li> \
-  <li> While submitting the photograph the following to be mentioned \
-    <ul> \
-      <li>Caption</li>  \
-      <li> Date,time and place of photograph</li> \
-      <li>Details of photographer(Name,College,Branch,Year)</li> \
-    </ul> \
-  </li> \
-  <li>The photograph must be clicked within the time span of 25th September to 10th October, and must be submitted before 11th October.</li> \
-  <li>Evaluation will be done on the basis of creativity, Caption and originality of the photograph. </li> \
-  <li>Mixing of photograph sing Photoshop or any other software is prohibited</li> \
-  <li>Photograph must be original. If the photograph is not found to be original, the photographer will be disqualaified.</li> \
-  <li>Once uploaded the photograph can be shared using the hashtag #NITPy_PhotoArt for public viewing, but the evaluation will NOT be on the basis of likes, shares and comments.</li> \
-</ul>");
+	$(".modal-body").html("<ul><li>Online events commences from 10th October,2017<li>There are three online events:<ul><li>Musically(No rules)<li>Photography:<ul><li>Photographs are to submit their photographs to the given link. ( give link)<li>While submitting the photograph the following is to be mentioned:<ul><li>Caption<li>Date,time and place of photograph<li>Details of the photographer(Name,College,Branch,Year)</ul><li>The photograph must be clicked within the time span of 9th Octoberr to 13th October, and must be submitted before 13th October afternoon.<li>Evaluation will be done on the basis of creativity, Caption and originality of the photograph.<li>Mixing of photograph using Photoshop or any other software is prohibited<li>Photograph must be original. If the photograph is not found to be original, the photographer will be disqualaified.<li>Once uploaded the photograph can be shared using the hashtag #NITPy_PhotoArt for public viewing, but the evaluation will NOT be on the basis of likes, shares and comments.</ul><li>Caption Writing(Picture will be posted on the facebook page at 8:00 am)</ul><li>The entries should be mailed to lecielfest@gmail.com<li>Points to be mentioned with the entry:<ul><li>Name<li>College and Contact Number and mail-id</ul></ul>");
 	$(".popupbtn").click();
 });
 $(window).on("scroll resize",function()
 {
 	var windowBottom = $(window).scrollTop() + $("#homeimg").height();
-	$(".testing1").html(eventOneTop);
-	$(".testing2").html(eventFiveTop);
-	$(".testing3").html(eventThreeTop);
-	$(".testing4").html(windowBottom);
 	if(!eventAnimation[0])
 	{
 		//alert("here");
@@ -297,7 +339,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event1").show("slide",{direction: "left"},1000);
 			eventAnimation[0]=1;		
-			$(".screen1").removeClass("screen1");
+			/*$(".screen1").removeClass("screen1");*/
 		}
 	}
 	if(!eventAnimation[1])
@@ -308,7 +350,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event2").show("slide",{direction: "left"},1000);
 			eventAnimation[1]=1;		
-			$(".screen2").removeClass("screen2");
+			/*$(".screen2").removeClass("screen2");*/
 		}
 	}
 	if(!eventAnimation[2])
@@ -319,7 +361,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event3").show("slide",{direction: "right"},1000);
 			eventAnimation[2]=1;		
-			$(".screen3").removeClass("screen3");
+			/*$(".screen3").removeClass("screen3");*/
 		}
 	}
 	if(!eventAnimation[3])
@@ -330,7 +372,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event4").show("slide",{direction: "left"},1000);
 			eventAnimation[0]=1;		
-			$(".screen4").removeClass("screen4");
+			/*$(".screen4").removeClass("screen4");*/
 		}
 	}
 	if(!eventAnimation[4])
@@ -341,7 +383,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event5").show("slide",{direction: "right"},1000);
 			eventAnimation[4]=1;		
-			$(".screen5").removeClass("screen5");
+			/*$(".screen5").removeClass("screen5");*/
 		}
 	}
 	if(!eventAnimation[5])
@@ -352,7 +394,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event6").show("slide",{direction: "right"},1000);
 			eventAnimation[5]=1;		
-			$(".screen6").removeClass("screen6");
+			/*$(".screen6").removeClass("screen6");*/
 		}
 	}
 	if(!eventAnimation[6])
@@ -363,7 +405,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event7").show("slide",{direction: "left"},1000);
 			eventAnimation[6]=1;
-			$(".screen7").removeClass("screen7");		
+			/*$(".screen7").removeClass("screen7");		*/
 		}
 	}
 	if(!eventAnimation[7])
@@ -374,7 +416,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event8").show("slide",{direction: "right"},1000);
 			eventAnimation[6]=1;		
-			$(".screen8").removeClass("screen8");
+			/*$(".screen8").removeClass("screen8");*/
 		}
 	}
 	if(!eventAnimation[8])
@@ -385,7 +427,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event9").show("slide",{direction: "right"},1000);
 			eventAnimation[6]=1;		
-			$(".screen9").removeClass("screen9");
+			/*$(".screen9").removeClass("screen9");*/
 		}
 	}
 	if(!eventAnimation[9])
@@ -396,7 +438,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event10").show("slide",{direction: "left"},1000);
 			eventAnimation[6]=1;		
-			$(".screen10").removeClass("screen10");
+			/*$(".screen10").removeClass("screen10");*/
 		}
 	}
 	if(!eventAnimation[10])
@@ -407,7 +449,7 @@ $(window).on("scroll resize",function()
 		{
 			$("#event11").show("slide",{direction: "left"},1000);
 			eventAnimation[6]=1;		
-			$(".screen11").removeClass("screen11");
+			/*$(".screen11").removeClass("screen11");*/
 		}
 	}
 	/*

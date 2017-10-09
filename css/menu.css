@@ -361,6 +361,9 @@
 .btn-pink:visited {
   background-color: rgba(170, 2, 89, 0.9) !important;
 }
+.btn-pink:focus {
+  background-color: rgba(170, 2, 89, 0.9) !important;
+}
 
 
 @media(max-width: 768px)
