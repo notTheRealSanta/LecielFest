@@ -285,7 +285,7 @@ body
     margin-right: 10px;
     color: rgba(255, 255, 255, 0.75);
     font-family: 'Muli', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 @media(max-width:768px)
@@ -309,7 +309,7 @@ body
     .title_text2 {
         width: 55%;
         height : auto;
-        margin-top: 15%; 
+        margin-top: 5%; 
         margin-right: 10px;
         color: white;
         font-family:  'Anton', sans-serif ; 
