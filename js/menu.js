@@ -1,4 +1,5 @@
 var flag=0;
+var homeScrollBtn = 0;
 var eventAnimation = new Array(11);
 for (var i = eventAnimation.length - 1; i >= 0; i--) 
 {
@@ -89,8 +90,9 @@ $(".scrollbtn").on('click', function(e) {
      {
       $(".c-hamburger").click();
      }
+     homeScrollBtn=1;
      var target = $(this).attr('href');
-     $('html, body').delay(200).animate({
+     $('html, body').delay(100).animate({
        scrollTop: ($(target).offset().top)
      }, 800);
 });
@@ -332,7 +334,7 @@ $("#event10").on("click",function() //event10 Talento
 $("#event11").on("click",function() //Online events event11
 {
 	$(".modal-title").html("Rules for Online Events");
-	$(".modal-body").html("<ul><li>Online events commences from 10th October,2017<li>There are three online events:<ul><li>Musically(No rules)<li>Photography:<ul><li>THEME: Photograph your favourite object in the most fascinating way possible.<li>Photographers are to submit their photographs to the given - photoart.leciel@gmail.com<li>While submitting the photograph the following is to be mentioned:<ul><li>Caption<li>Date,time and place of photograph<li>Which category the photo belongs.DSLR segment or Mobile Segment.<li>Details of the photographer(Name,College,Branch,Year)</ul><li>The photograph must have the object being displayed as the prime subject, and the caption appropriately describing it.<li>The photograph must be clicked within the time span of 9th October to 13th October, and must be submitted before 13th October afternoon.<li>Evaluation will be done on the basis of creativity, Caption and originality of the photograph.<li>Mixing of photograph using Photoshop or any other software is prohibited<li>Photograph must be original. If the photograph is not found to be original, the photographer will be disqualaified.<li>Once uploaded the photograph can be shared using the hashtag #NITPy_PhotoArt for public viewing, but the evaluation will NOT be on the basis of likes, shares and comments.<li>An example can be found in the given <a target="+"_blank" + " href="+ "https://www.instagram.com/p/BZNBRz8FkoVAsZbb-dQ2T2e3TAyBXm199sWZsg0" + ">link</a> </ul><li>Caption Writing(Picture will be posted on the facebook page at 8:00 am)</ul><li>The entries should be mailed to lecielfest@gmail.com<li>Points to be mentioned with the entry:<ul><li>Name<li>College and Contact Number and mail-id</ul></ul>");
+	$(".modal-body").html("<ul><li>Online events commences from 10th October,2017<li>There are three online events:<ul><li>Musically(No rules)<li>Photography:<ul><li>THEME: Photograph your favourite object in the most fascinating way possible.<li>Photographers are to submit their photographs to the given email id - photoart.leciel@gmail.com<li>While submitting the photograph the following is to be mentioned:<ul><li>Caption<li>Date,time and place of photograph<li>Which category the photo belongs.DSLR segment or Mobile Segment.<li>Details of the photographer(Name,College,Branch,Year)</ul><li>The photograph must have the object being displayed as the prime subject, and the caption appropriately describing it.<li>The photograph must be clicked within the timespan of 9th October to 13th October, and must be submitted before 13th October 12:00hrs(IST).<li>Evaluation will be done on the basis of creativity, caption and originality of the photograph.<li>Mixing of photograph using Photoshop or any other software is prohibited, while minor degree editing is allowed.<li>Photograph must be original. If the photograph is not found to be original, the photographer will be disqualaified.<li>Once uploaded the photograph can be shared using the hashtag #NITPy_PhotoArt for public viewing, but the evaluation will NOT be on the basis of likes, shares and comments.<li>An example can be found in the given <a target="+"_blank" + " href="+ "https://www.instagram.com/p/BZNBRz8FkoVAsZbb-dQ2T2e3TAyBXm199sWZsg0" + ">link</a> </ul><li>Caption Writing(Picture will be posted on the facebook page at 8:00 am)</ul><li>The entries should be mailed to lecielfest@gmail.com<li>Points to be mentioned with the entry:<ul><li>Name<li>College and Contact Number and mail-id</ul></ul>");
 	$(".popupbtn").click();
 });
 $(window).on("scroll resize",function()
@@ -344,7 +346,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventOneTop+(eventOneHeight/2) ))
 		{
-			$("#event1").show("slide",{direction: "left"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event1").delay(400).show("slide",{direction: "left"},1000);
+			}
+			else
+			{
+				$("#event1").show("slide",{direction: "left"},1000);
+			}
 			eventAnimation[0]=1;		
 			/*$(".screen1").removeClass("screen1");*/
 		}
@@ -355,7 +364,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventTwoTop+(eventTwoHeight/2) ))
 		{
-			$("#event2").show("slide",{direction: "left"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event2").delay(400).show("slide",{direction: "left"},1000);
+			}
+			else
+			{
+				$("#event2").show("slide",{direction: "left"},1000);
+			}
 			eventAnimation[1]=1;		
 			/*$(".screen2").removeClass("screen2");*/
 		}
@@ -366,7 +382,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventThreeTop+(eventThreeHeight/2) ))
 		{
-			$("#event3").show("slide",{direction: "right"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event3").delay(400).show("slide",{direction: "right"},1000);
+			}
+			else
+			{
+				$("#event3").show("slide",{direction: "right"},1000);
+			}
 			eventAnimation[2]=1;		
 			/*$(".screen3").removeClass("screen3");*/
 		}
@@ -377,7 +400,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventFourTop+(eventFourHeight/2) ))
 		{
-			$("#event4").show("slide",{direction: "left"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event4").delay(500).show("slide",{direction: "left"},1000);
+			}
+			else
+			{
+				$("#event4").show("slide",{direction: "left"},1000);
+			}
 			eventAnimation[0]=1;		
 			/*$(".screen4").removeClass("screen4");*/
 		}
@@ -388,7 +418,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventFiveTop+(eventFiveHeight/2) ))
 		{
-			$("#event5").show("slide",{direction: "right"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event5").delay(500).show("slide",{direction: "right"},1000);
+			}
+			else
+			{
+				$("#event5").show("slide",{direction: "right"},1000);
+			}
 			eventAnimation[4]=1;		
 			/*$(".screen5").removeClass("screen5");*/
 		}
@@ -399,7 +436,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventSixTop+(eventSixHeight/2) ))
 		{
-			$("#event6").show("slide",{direction: "right"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event6").delay(700).show("slide",{direction: "right"},1000);
+			}
+			else
+			{
+				$("#event6").show("slide",{direction: "right"},1000);
+			}
 			eventAnimation[5]=1;		
 			/*$(".screen6").removeClass("screen6");*/
 		}
@@ -410,7 +454,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventSevenTop+(eventSevenHeight/2) ))
 		{
-			$("#event7").show("slide",{direction: "left"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event7").delay(700).show("slide",{direction: "left"},1000);
+			}
+			else
+			{
+				$("#event7").show("slide",{direction: "left"},1000);
+			}
 			eventAnimation[6]=1;
 			/*$(".screen7").removeClass("screen7");		*/
 		}
@@ -421,7 +472,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventEightTop+(eventEightHeight/2) ))
 		{
-			$("#event8").show("slide",{direction: "right"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event8").delay(800).show("slide",{direction: "right"},1000);
+			}
+			else
+			{
+				$("#event8").show("slide",{direction: "right"},1000);
+			}
 			eventAnimation[6]=1;		
 			/*$(".screen8").removeClass("screen8");*/
 		}
@@ -432,7 +490,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventNineTop+(eventNineHeight/2) ))
 		{
-			$("#event9").show("slide",{direction: "right"},1000);
+			if(homeScrollBtn)
+			{
+					$("#event9").delay(800).show("slide",{direction: "right"},1000);
+			}
+			else
+			{
+					$("#event9").show("slide",{direction: "right"},1000);
+			}
 			eventAnimation[6]=1;		
 			/*$(".screen9").removeClass("screen9");*/
 		}
@@ -443,7 +508,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventTenTop+(eventTenHeight/2) ))
 		{
-			$("#event10").show("slide",{direction: "left"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event10").delay(900).show("slide",{direction: "left"},1000);
+			}
+			else
+			{
+				$("#event10").show("slide",{direction: "left"},1000);
+			}
 			eventAnimation[6]=1;		
 			/*$(".screen10").removeClass("screen10");*/
 		}
@@ -454,7 +526,14 @@ $(window).on("scroll resize",function()
 
 		if(windowBottom > (eventElevenTop+(eventElevenHeight/2) ))
 		{
-			$("#event11").show("slide",{direction: "left"},1000);
+			if(homeScrollBtn)
+			{
+				$("#event11").delay(900).show("slide",{direction: "left"},1000);
+			}
+			else
+			{
+				$("#event11").show("slide",{direction: "left"},1000);
+			}
 			eventAnimation[6]=1;		
 			/*$(".screen11").removeClass("screen11");*/
 		}
