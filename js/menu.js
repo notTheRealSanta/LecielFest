@@ -319,7 +319,14 @@ $("#event9").on("click",function() // event9 Stoke
 $("#event10").on("click",function() //event10 Talento
 {
 	$(".modal-title").html("Rules for Talento");
-	$(".modal-body").html("All the necessary equipments will be provided. ");
+	$(".modal-body").html("<ul> \
+	<li>The exhibits must be already have been prepared.</li> \
+	<li>Either an Individual or a maximum of 3 people can participate.</li> \
+	<li>All the necessary material ( ex:- a bangle stand for the bangles you make ) should be brought by the participants.</li> \
+	<li>The decision of judges are final.</li> \
+	<li>Innovative and creative exhibits of low price will be encouraged.</li> \
+	<li>Reduce, Reuse and Recycle : exhibits with this quality will be encouraged.</li> \
+  </ul>");
 	$(".popupbtn").click();
 });
 $("#event11").on("click",function() //Online events event11
