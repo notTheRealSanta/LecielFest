@@ -169,7 +169,7 @@ $("#event1").on("click",function() //event1 pulse solo singing
 	<li>Types allowed ( Carnatic, Hindustani, western)</li> \
 	<li>Insruments allowed</li> \
 	<li>No abusive words in the music</li> \
-	<li>Instrumental karaoke is allowed. However vocal karaoke is not allowed.<li> \
+	<li>Instrumental karaoke is allowed. However vocal karaoke is not allowed. \
 	<li>No provocative attire </li> \
 	<li>Participants should possess their college id card while reporting for the event.</li> \
 	<li>proof  for registering  for the event must be produced at the time of reporting.</li> \
@@ -274,7 +274,7 @@ $("#event6").on("click",function() //event6 duet dancing
 $("#event7").on("click",function() //light camera action  event7
 {
 	$(".modal-title").html("Rules for Light Camera Action");
-	$(".modal-body").html("<ul> \
+	$(".modal-body").html('"If it can be written or thought it can be filmed as well" - Stanley.<br><i>"In the platform of infinite possibilities LIGHTS CAMERA ACTION gives you golden chance.So it is your time to unleash the inner artist within you and pull the people off the boredom with your creative cut shorts."</i><ul> \
   <li>No restriction on topic. However topics that are offensive to certain community, religion, gender etc are strictly prohibited and will lead to direct disqualification.</li> \
   <li>Max time limit: 15 min</li> \
   <li>The language preffered is English.however other languages are also allowed only if there is English subtitles.</li> \
@@ -284,13 +284,13 @@ $("#event7").on("click",function() //light camera action  event7
   <li>Participants should possess their college id card while reporting for the event.</li> \
   <li>Proof  for registering  for the event must be produced at the time of reporting.</li> \
   <li>No refund will be given</li> \
-</ul>");
+</ul>');
 	$(".popupbtn").click();
 });
 $("#event8").on("click",function() //event8 Mask Skit
 {
 	$(".modal-title").html("Rules for MASK");
-	$(".modal-body").html("<ul> \
+	$(".modal-body").html('<i>"Life is a skit,A play of memories ,surfeit of tragedies and comedies,A Metaphor of Enigma!Time has come to obliterate the agony that devours us joins the fun regime! cast away the gloomy countenances,put on the fun mask,Shout out loud!LECIEL 2K17 presents dramatics event MASK,A cause For Applause,where you Express to Impress,To scatter Joy and Shatter PAin!!Draft your script,Devise your play,Let the spectators hold the mesmerizing blend of fantasy with reality!!</i>"<ul> \
   <li>Maximum of 12 participants per team ( 10 on stage and 2 back stage)</li> \
   <li>Language must be English only.</li> \
   <li>Max time limit: 15 mins</li> \
@@ -302,7 +302,7 @@ $("#event8").on("click",function() //event8 Mask Skit
   <li>Participants should possess their college id card while reporting for the event.</li> \
   <li>Proof  for registering  for the event must be produced at the time of reporting.</li> \
   <li>No refund will be given</li> \
-</ul>");
+</ul>');
 	$(".popupbtn").click();
 });
 $("#event9").on("click",function() // event9 Stoke
@@ -334,7 +334,7 @@ $("#event10").on("click",function() //event10 Talento
 $("#event11").on("click",function() //Online events event11
 {
 	$(".modal-title").html("Rules for Online Events");
-	$(".modal-body").html("<ul><li>Online events commences from 10th October,2017<li>There are three online events:<ul><li>Musically(No rules)<li>Photography:<ul><li>THEME: Photograph your favourite object in the most fascinating way possible.<li>Photographers are to submit their photographs to the given email id - photoart.leciel@gmail.com<li>While submitting the photograph the following is to be mentioned:<ul><li>Caption<li>Date,time and place of photograph<li>Which category the photo belongs.DSLR segment or Mobile Segment.<li>Details of the photographer(Name,College,Branch,Year)</ul><li>The photograph must have the object being displayed as the prime subject, and the caption appropriately describing it.<li>The photograph must be clicked within the timespan of 9th October to 13th October, and must be submitted before 13th October 12:00hrs(IST).<li>Evaluation will be done on the basis of creativity, caption and originality of the photograph.<li>Mixing of photograph using Photoshop or any other software is prohibited, while minor degree editing is allowed.<li>Photograph must be original. If the photograph is not found to be original, the photographer will be disqualaified.<li>Once uploaded the photograph can be shared using the hashtag #NITPy_PhotoArt for public viewing, but the evaluation will NOT be on the basis of likes, shares and comments.<li>An example can be found in the given <a target="+"_blank" + " href="+ "https://www.instagram.com/p/BZNBRz8FkoVAsZbb-dQ2T2e3TAyBXm199sWZsg0" + ">link</a> </ul><li>Caption Writing(Picture has been posted on the facebook page <a target="+"_blank" + " href="+ "https://www.facebook.com/Le-Ciel17-347486829031124/" + ">Le_Ciel_17 </a> )<ul><li>The caption should not exceed more than 30 words<li>The caption should be original and related to the picture provided<li>send your caption to : lecielfest@gmail.com</ul></ul><li>The entries should be mailed to lecielfest@gmail.com<li>Points to be mentioned with the entry:<ul><li>Name<li>College and Contact Number and mail-id</ul></ul>");
+	$(".modal-body").html('<ul><li>Online events commences from 10th October,2017<li>There are three online events:<ul><li>Musically<ul><li>The video should be less than 15 MB <li>The video should be of 20-30 seconds <li> There is no restriction on the language <li> No abusive words in the audio/video <li>No provocation attire <li> Email your captured video to lecielfest@gmail.com <li> Provide your NAME, ROLL NO. , COLLEGE NAME along with the email. </ul><li>Photography:<ul><li>THEME: Photograph your favourite object in the most fascinating way possible.<li>Photographers are to submit their photographs to the given email id - photoart.leciel@gmail.com<li>While submitting the photograph the following is to be mentioned:<ul><li>Caption<li>Date,time and place of photograph<li>Which category the photo belongs.DSLR segment or Mobile Segment.<li>Details of the photographer(Name,College,Branch,Year)</ul><li>The photograph must have the object being displayed as the prime subject, and the caption appropriately describing it.<li>The photograph must be clicked within the timespan of 9th October to 13th October, and must be submitted before 13th October 12:00hrs(IST).<li>Evaluation will be done on the basis of creativity, caption and originality of the photograph.<li>Mixing of photograph using Photoshop or any other software is prohibited, while minor degree editing is allowed.<li>Photograph must be original. If the photograph is not found to be original, the photographer will be disqualaified.<li>Once uploaded the photograph can be shared using the hashtag #NITPy_PhotoArt for public viewing, but the evaluation will NOT be on the basis of likes, shares and comments.<li>An example can be found in the given <a target="_blank"  " href= "https://www.instagram.com/p/BZNBRz8FkoVAsZbb-dQ2T2e3TAyBXm199sWZsg0" >link</a> </ul><li>Caption Writing Picture has been posted on the facebook page <a target= "_blank" " href= "https://www.facebook.com/leciel17" >leciel fest </a> <ul><li>The caption should not exceed more than 30 words<li>The caption should be original and related to the picture provided<li>send your caption to : lecielfest@gmail.com<li>Provide you NAME, ROLLNO, COLLEGE NAME along with the email</ul></ul><li>The entries should be mailed to lecielfest@gmail.com<li>Points to be mentioned with the entry:<ul><li>Name<li>College and Contact Number and mail-id</ul></ul>');
 	$(".popupbtn").click();cap
 });
 $(window).on("scroll resize",function()
