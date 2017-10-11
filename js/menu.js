@@ -313,7 +313,7 @@ $("#event9").on("click",function() // event9 Stoke
   <li>Max time limit: 2 hour</li> \
   <li>No restriction on type of colors used (water colors, crayons, pencil shading , oil pastels). However use of sketch pens are only allowed for highlighting but the entire sketch should not be of sketch colors.</li> \
   <li>The participants must bring their own stationaries</li> \
-  <li>A2 size sheet will be provided at the venue</li> \
+  <li>A3 size sheet will be provided at the venue</li> \
 </ul>");
 	$(".popupbtn").click();
 });
