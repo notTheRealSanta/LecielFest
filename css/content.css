@@ -483,6 +483,48 @@ body
 }
 
 
+/* The element to apply the animation to */
+
+.intro{
+  position: absolute;
+  width:70%;
+  color: transparent;
+  margin-right: auto;
+  margin-left: auto;
+  top:10%;
+  left: 15%;
+  font-size: 2em;
+  font-family: 'Nova Oval', cursive;
+ 
+   animation: example 4s ease  ;
+   animation-delay: 3s;
+   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+     animation-play-state:running;
+
+    
+}
+/* The animation code */
+@keyframes example {
+    0% {color: transparent;}  
+     50% {color: #e90186;}
+    100% {color: white ;}
+
+
+}
+@media(max-width: 768px)
+{
+  .intro
+  {
+    font-size: 1em;
+  }
+}
+
+
+/* letter drop  */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
 
 
 
