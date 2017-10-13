@@ -156,6 +156,12 @@ $("#reg_btn").on("click",function()
 	$(".modal-title").html("Register Now!");
 	$(".modal-body").html('<iframe class=googleform frameborder=0 height=500 marginheight=0 marginwidth=100 src="https://docs.google.com/forms/d/e/1FAIpQLSd43yjKJr0Vehf454k6bqfoVSGLa_syoUVovumybZWhHLpmIQ/viewform?embedded=true">Loading...</iframe><div style=font-size:2em>Pay through Online SBI at : <a href=https://www.onlinesbi.com/prelogin/institutiontypedisplay.htm style=background-color:#fff target=_blank>Click Here</a></div>');
 });
+$(".ibtn").on("click",function()
+{   
+    $(".modal-title").html("Promo:");
+    $(".modal-body").html('<iframe width="100%" height="400" src="https://www.youtube.com/embed/TCisDt7qWO8" frameborder="0" allowfullscreen></iframe>');
+    $(".popupbtn").click();
+});
 $("#event1").on("click",function() //event1 pulse solo singing
 {
 	$(".modal-title").html("Rules for PULSE");
