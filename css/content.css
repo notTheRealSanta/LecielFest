@@ -526,6 +526,18 @@ body
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
 
+.ibtn
+  {
+    margin-top: 30%; background-color: transparent; border: 0px;
+  }
 
+
+@media(max-width: 768px)
+{
+  .ibtn
+  {
+    margin-top: 110%; 
+  }
+}
 
 
