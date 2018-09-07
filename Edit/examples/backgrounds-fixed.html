@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Le Ciel</title>
+<link rel="stylesheet" type="text/css" href="Main.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css'
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+<link rel="stylesheet" type="text/css" href="examples.css" />
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3,
+    #slide1,
+		#slide2,
+		#slide3,
+    #slide4{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		margin: 0;
+    padding: 0;
+    width: 100%;
+		background-image: url(imgs/pic.jpg);
+	  padding: 6% 0 0 0;
+
+	}
+	#section0 h1{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	#section2{
+		background-image: url(imgs/8music.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/7.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+	#menu1{
+		background-color: #f20f0f;
+	}
+
+	#blog-slider__button1{
+		background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+		box-shadow: 0px 14px 80px rgba(19, 12, 183, 0.4);
+	}
+
+	#blog-slider__button2{
+		background-image: linear-gradient( 135deg, #FFA6B7 10%, #1E2AD2 100%);
+		box-shadow: 0px 14px 80px rgba(30, 42, 210, 0.4);
+	}
+
+	#blog-slider__button3{
+		background-image: linear-gradient(147deg, #cd1ca5 0%, #ed81d9 74%);
+		box-shadow: 0px 14px 80px rgba(222, 14, 201, 0.64);
+	}
+
+	#blog-slider__button4{
+		background-image: linear-gradient(147deg, #176bcc 0%, rgba(#e7ed9a, 0.66) 100%);
+		box-shadow: 0px 14px 80px rgba(90, 238, 38, 0.64);
+	}
+
+	#blog-slider__img1{
+		box-shadow: 4px 13px 30px 1px rgba(112, 240, 52, 0.2);
+	}
+
+	#blog-slider__img2{
+		box-shadow: 4px 13px 30px 1px rgba(22, 125, 232, 0.2);
+	}
+
+	#blog-slider__img3{
+		box-shadow: 4px 13px 30px 1px rgba(228, 49, 244, 0.2);
+	}
+
+	#blog-slider__img4{
+		box-shadow: 4px 13px 30px 1px rgba(107, 232, 63, 0.2);
+	}
+
+
+
+
+
+
+	}
+
+
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		padding: 0 0 0 0;
+	}
+	#slide2{
+		padding: 0 0 0 0;
+	}
+	#slide3{
+		padding: 0 0 0 0;
+	}
+	#slide4{
+		padding: 0 0 0 0;
+	}
+	#slide5{
+		padding: 0 0 0 0;
+	}
+
+	</style>
+
+
+
+
+</head>
+<body>
+
+	<!--Loading-->
+		<div class="spinner-wrapper">
+		<div class='loading'>
+			<div class='logo'></div>
+			<div class='dots animate'>
+				<div class='dot'></div>
+				<div class='dot'></div>
+				<div class='dot'></div>
+				<div class='dot'></div>
+				<div class='dot'></div>
+			</div>
+		</div>
+		</div>
+
+	<div id="fullpage">
+
+
+
+
+<!--Firstpage-->
+	  <div class="section " id="section0">
+
+
+			<!---Loading Form-->
+
+      <div class="container">
+
+          <br>
+          <center>
+
+        <button class="btn btn-primary btn-lg"style="float:right" href="#signup" data-toggle="modal" data-target=".log-sign">Sign Up</button>
+      </center>
+        <br>
+
+
+        </div>
+
+      <!-- Modal -->
+      <div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+
+              <div class="bs-example bs-example-tabs">
+                  <ul id="myTab" class="nav nav-tabs">
+                    <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+                    <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+
+                  </ul>
+              </div>
+            <div class="modal-body">
+              <div id="myTabContent" class="tab-content">
+
+              <div class="tab-pane fade active in" id="signin">
+                  <form class="form-horizontal">
+                  <fieldset>
+                  <!-- Sign In Form -->
+                  <!-- Text input-->
+
+                     <div class="group">
+      <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+          <label class="label" for="date">Email address</label></div>
+
+
+                  <!-- Password input-->
+                  <div class="group">
+      <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+          <label class="label" for="date">Password</label>
+          </div>
+      <em>minimum 6 characters</em>
+
+                 <div class="forgot-link">
+                  <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+                  </div>
+
+
+                  <!-- Button -->
+                  <div class="control-group">
+                    <label class="control-label" for="signin"></label>
+                    <div class="controls">
+                      <button id="signin" name="signin" class="btn btn-primary btn-block">Log In</button>
+                    </div>
+                  </div>
+                  </fieldset>
+                  </form>
+              </div>
+
+
+              <div class="tab-pane fade" id="signup">
+                  <form class="form-horizontal">
+                  <fieldset>
+                  <!-- Sign Up Form -->
+                  <!-- Text input-->
+                  <div class="group">
+      <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+          <label class="label" for="date">First Name</label></div>
+
+                  <!-- Text input-->
+                  <div class="group">
+      <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+          <label class="label" for="date">Last Name</label></div>
+
+                  <!-- Password input-->
+                  <div class="group">
+      <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+          <label class="label" for="date">Email</label></div>
+
+                  <!-- Text input-->
+                  <div class="group">
+      <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+          <label class="label" for="date">Password</label></div>
+                    <em>1-8 Characters</em>
+
+                    <div class="group2">
+      <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+          <label class="label" for="date">Info</label></div>
+
+
+
+                  <!-- Button -->
+                  <div class="control-group">
+                    <label class="control-label" for="confirmsignup"></label>
+                    <div class="controls">
+                      <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign Up</button>
+                    </div>
+                  </div>
+                  </fieldset>
+                  </form>
+            </div>
+          </div>
+            </div>
+            <!--<div class="modal-footer">
+            <center>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </center>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--modal2-->
+
+      <div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+              <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal">
+              <fieldset>
+              <div class="group">
+      <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+          <label class="label" for="date">Email address</label></div>
+
+
+              <div class="control-group">
+                    <label class="control-label" for="forpassword"></label>
+                    <div class="controls">
+                      <button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+                    </div>
+                  </div>
+                </fieldset>
+                  </form>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+<!---MENU--->
+<a id="offCanvas" class="hamburger"><i class="ti-menu"></i></a>
+<!-- Offcanvas Navigation Start -->
+<div class="nav-offcanvas">
+    <button type="button" class="close" id="offCanvasClose" aria-label="Close">
+        <i class="ti-close"></i>
+    </button>
+    <div class="nav-offcanvas-menu">
+        <ul>
+            <li><a href="#section0">Home</a></li>
+            <li><a href="#slide1">Events</a></li>
+            <li><a href="#section2">Hospitality</a></li>
+            <li><a href="#">Celebrity</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Offcanvas Navigation End -->
+<div class="offcanvas-overlay"></div>
+
+
+
+<!--brush stroke-->
+			<div class="wrapper">
+
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+			<style type="text/css">
+			.st0{fill:white;stroke:#ffff;stroke-width:8;stroke-miterlimit:10;}
+			</style>
+			<g>
+			<path class="st0" d="M19.3,554.7c-3.2-2.6-5.3-5.4-6.2-8.6c-0.9-3.2-1.1-6.1-0.4-8.8c0.7-2.7,2.1-4.8,4.4-6.3
+			   c2.3-1.5,5.2-2.2,8.6-1.9l2.4-1.2c0-0.3,0.1-0.4,0.4-0.4c8.8-16.6,18.7-36.2,29.5-58.7c10.9-22.5,21.6-46.3,32.2-71.4
+			   c10.6-25.1,20.6-50.5,29.9-76.4c9.4-25.8,17.3-50.4,23.9-73.7c6.6-23.3,11.1-44.4,13.5-63.3c2.4-18.9,2-34-1.2-45.3l-0.4-2.7
+			   c0-1.8,1.5-2.4,4.4-1.9c2.9,0.5,6.6,1.8,11.1,3.8c4.4,2,9.3,4.7,14.7,7.9c5.4,3.2,10.4,6.5,15.1,9.8c4.7,3.3,8.6,6.5,11.9,9.6
+			   s5.1,5.6,5.6,7.7c0.5,9.2-1,21.9-4.6,38c-3.6,16.1-8.8,34.4-15.7,54.9c-6.8,20.5-14.9,42.2-24.3,65.2c-9.4,23-19.6,46-30.5,69.1
+			   c-11,23-22.6,45.1-34.8,66.4c-12.2,21.2-24.5,40.3-36.8,57.2c12.9,0.5,26.5,1.7,41,3.6c14.5,1.9,29.9,4,46.2,6.3
+			   c20.9,3.3,42.4,6.3,64.5,9c22.1,2.7,43.9,4,65.3,4c19,0,37.4-1.5,55.1-4.6s34.3-8.6,49.8-16.5c2.7-0.3,4.8,1.9,6.4,6.5
+			   c1.6,4.6,2.5,9.8,2.6,15.7c0.1,5.9-0.3,11.5-1.2,16.9c-0.9,5.4-2.3,8.7-4.2,10l1.2-0.4c-9.6,9.2-21.5,15.7-35.6,19.6
+			   c-14.1,3.8-29.7,5.8-46.8,5.8c-23.3,0-47.9-2.4-73.7-7.3c-25.9-4.9-51.8-10.2-77.8-16.1c-23.6-5.1-46-9.7-67.3-13.6
+			   c-21.3-4-40-5.9-56.1-5.9c-3,0-5.6,0.1-7.8,0.2c-2.3,0.1-4.8,0.3-7.4,0.6L19.3,554.7z"/>
+			<path class="st0" d="M419.6,364.4c-8.3,23-20.7,42.2-37.2,57.6c-16.5,15.3-36,26.7-58.5,34.1c1.6,6.9,4.4,13.4,8.2,19.6
+			   c3.9,6.1,9,9.8,15.5,11.1l-0.8-0.4c5.6,1.3,11.7,0.9,18.3-1.2c6.6-2,13.3-5.7,20.3-10.9c7-5.2,13.8-12.1,20.5-20.5
+			   c6.7-8.4,13-18.4,18.9-29.9c2.9-6.1,5.7-12.5,8.2-19c2.5-6.5,4.9-12.7,7-18.6c1.9-3.3,4.6-5.1,8.2-5.4c3.6-0.3,7,0.6,10,2.5
+			   c3.1,1.9,5.5,4.6,7.2,8.1c1.7,3.5,1.8,7.4,0.2,11.7l-5.2,13.8c-4.8,11.5-10.9,24.2-18.1,38.2c-7.2,13.9-16.5,27.4-27.7,40.5
+			   c-6.7,7.2-13.7,12.7-20.9,16.7c-7.2,4-14.2,6.9-20.9,8.8c-6.7,1.9-12.8,3.1-18.3,3.5c-5.5,0.4-9.8,0.6-13.1,0.6
+			   c-20.9,0-38-5.8-51.2-17.3c-13.3-11.5-21.9-27.2-25.9-47.2c-3.5-17.4-3.4-34.4,0.2-51c3.6-16.6,10.5-34.7,20.7-54.1
+			   c3.5-6.4,8.4-13.2,14.9-20.5c6.4-7.3,13.9-14,22.3-20.1c8.4-6.1,17.6-11.1,27.5-15c9.9-3.8,20.2-5.6,30.9-5.4
+			   c11.3,0.3,20.8,3.8,28.7,10.6c7.9,6.8,12.8,15.9,14.7,27.4c0.8,5.1,0.9,10.3,0.2,15.5c-0.7,5.2-2.3,10.8-5,16.7V364.4z
+			    M388.2,332.9c-8.8,1.8-16.9,5.9-24.1,12.3c-7.2,6.4-13.6,13.9-19.1,22.6c-5.5,8.7-10,18-13.5,27.8c-3.5,9.8-6,19.1-7.6,27.8
+			   c16.3-7.4,30.5-17.5,42.6-30.1c12.1-12.7,20.9-27.8,26.5-45.5v0.4c0.8-2,1.3-4.1,1.4-6.1c0.1-2,0.1-3.8-0.2-5.4
+			   C393.4,333.2,391.4,331.9,388.2,332.9z"/>
+			<path class="st0" d="M875.3,402.3c-6.2,22.3-14.6,44.4-25.3,66.4c-10.7,22-23.4,41.6-38,58.7c-14.6,17.1-30.9,30.8-48.8,40.9
+			   c-18,10.1-37.4,14.5-58.3,13.2c-11.3-1-21.8-3.9-31.5-8.6c-9.8-4.7-18.7-10.9-26.7-18.4c-8-7.5-14.9-16.3-20.7-26.3
+			   c-5.8-10-10.2-20.7-13.5-32.2c-3.2-14.6-4.6-31.1-4.2-49.7c0.4-18.5,2.4-38,6-58.3c3.6-20.3,8.6-41,15.1-62
+			   c6.4-21,14.2-41.4,23.3-61.2c9.1-19.8,19.5-38.4,31.1-55.8c11.7-17.4,24.3-32.5,38-45.5c13.7-12.9,28.3-23.1,44-30.7
+			   c15.7-7.5,32.2-11.3,49.6-11.3c10.4,0,19.5,1.1,27.1,3.3c7.6,2.2,14,5.2,19.1,9.2c5.1,4,9.1,8.7,12.1,14.2c2.9,5.5,5,11.6,6,18.2
+			   c1.1,6.9,1.2,14.3,0.4,22.1c-0.8,7.8-2.3,15.9-4.6,24.2c-2.3,8.3-5.2,16.6-8.6,24.9c-3.5,8.3-7.1,16.3-10.9,24
+			   c-0.8,1.5-1.9,3.2-3.4,5c-1.5,1.8-3.3,3.5-5.4,5.2c-2.1,1.7-4.6,3.1-7.4,4.2c-2.8,1.2-6,1.7-9.4,1.7c-2.7,0-6.6-1-11.7-2.9
+			   c-5.1-1.9-11.8-5-20.1-9.4c4.3-3.8,8.9-9.5,13.9-16.9c5-7.4,9.6-15.5,13.9-24.2c4.3-8.7,7.8-17.5,10.7-26.3
+			   c2.8-8.8,4.4-16.6,4.6-23.2c0.5-5.1,0.5-8.8,0-11.1c-0.5-3.1-2.4-5.2-5.6-6.5c-3.2-1.3-7.5-2.2-12.9-2.7
+			   c-10.4,1-20.8,5.6-31.1,13.8c-10.3,8.2-20.2,18.5-29.5,30.9c-9.4,12.4-18.2,26.3-26.5,41.6c-8.3,15.3-15.7,30.8-22.3,46.4
+			   c-6.6,15.6-12.3,30.6-17.1,45.1c-4.8,14.5-8.3,26.8-10.4,37c-2.7,11.5-5,23.4-7,35.7s-3.2,25.2-3.4,38.8c-0.8,14.8-0.1,28.5,2,41.1
+			   c2.4,14.8,6.8,27,13.1,36.6c6.3,9.6,14.5,14.6,24.7,15.2c10.7,0.8,21-0.8,30.7-4.8c9.8-4,19-9.7,27.5-17.1
+			   c8.6-7.4,16.6-16,24.1-25.9c7.5-9.8,14.3-20.3,20.5-31.5c6.2-11.1,11.7-22.3,16.7-33.6c5-11.3,9.2-22,12.7-32.2
+			   c0.8-1.5,2.8-2.1,6-1.7c3.2,0.4,6.6,1.3,10,2.7c3.5,1.4,6.4,3.2,8.8,5.4c2.4,2.2,3.2,4.2,2.4,5.9L875.3,402.3z"/>
+			<path class="st0" d="M909.1,296.1c3.5-1.8,8.2-1.5,14.3,1c6,2.4,11.9,6,17.7,10.7c5.8,4.7,10.4,10.2,14.1,16.5
+			   c3.6,6.3,4.8,12.3,3.4,18.2c0.3-0.5,0.1,0-0.4,1.5c-0.5,1.5-1.3,3.6-2.2,6.1c-0.9,2.6-2,5.5-3.2,8.8c-1.2,3.3-2.3,6.4-3.4,9.2
+			   c-2.4,6.7-5.2,14-8.2,22.1c-3.1,8.1-6,16.2-8.8,24.6c-2.8,8.3-5.6,16.4-8.2,24.4c-2.7,7.9-4.8,15-6.2,21.1
+			   c-1.5,6.1-2.4,11.1-2.8,14.8c-0.4,3.7,0.2,5.6,1.8,5.6h2.8c7.8-2.6,14.8-6.7,21.1-12.5c6.3-5.8,12.1-12.3,17.3-19.8
+			   c5.2-7.4,10-15.3,14.3-23.6c4.3-8.3,8.4-16.3,12.5-24l4.4-9.2c0.8-1.5,2.7-1.9,5.8-1c3.1,0.9,6.1,2.4,9,4.6
+			   c2.9,2.2,5.4,4.6,7.4,7.3c2,2.7,2.5,4.9,1.4,6.7l0.4-0.8c-7.8,16.6-17.1,33.5-27.9,50.6c-10.9,17.1-22.4,32.2-34.8,45.3
+			   c-2.1,1.8-4.7,3.9-7.6,6.3c-3,2.4-6.4,4.7-10.2,6.7c-3.9,2-8.1,3.8-12.7,5.2c-4.6,1.4-9.4,2.1-14.5,2.1
+			   c-10.7-0.3-19.2-4.2-25.3-11.7c-6.2-7.5-10.2-16.9-12.1-28.2c-0.5-4.1-0.9-8.3-1-12.7c-0.1-4.3,0.1-8.8,0.6-13.4v0.4
+			   c1.3-12.8,4.2-27.6,8.4-44.5c4.3-16.9,8.8-33.8,13.7-50.6c2.9-11.5,5.9-22.7,8.8-33.6c2.9-10.9,5.2-20.8,6.8-29.7L909.1,296.1z
+			    M930,178.7c2.1-0.3,4.9,0.4,8.2,2.1c3.3,1.7,7,4,10.9,6.9c3.9,2.9,7.8,6.3,11.7,10c3.9,3.7,7.4,7.3,10.4,10.7
+			   c3.1,3.5,5.6,6.7,7.6,9.6c2,2.9,3.1,5.2,3.4,6.7c-0.3,7.4-1.3,13.9-3,19.6c-1.7,5.6-3.6,11.4-5.4,17.3c-1.9,5.9-3.7,11.9-5.4,18
+			   c-1.7,6.1-3,13.3-3.8,21.5c-3.5-0.8-7.6-2.6-12.3-5.6c-4.7-2.9-9.1-6.3-13.3-10.2c-4.2-3.8-7.8-7.8-10.9-11.9
+			   c-3.1-4.1-4.9-7.5-5.4-10.4c-0.5-5.1-0.7-10.7-0.4-16.9c0.3-6.1,0.7-12.5,1.2-19.2c0.8-6.6,1.3-13.4,1.6-20.3
+			   c0.3-6.9,0.1-13.6-0.4-20L930,178.7z"/>
+			<path class="st0" d="M1167.1,364.4c-8.3,23-20.7,42.2-37.2,57.6c-16.5,15.3-36,26.7-58.5,34.1c1.6,6.9,4.4,13.4,8.2,19.6
+			   c3.9,6.1,9,9.8,15.5,11.1l-0.8-0.4c5.6,1.3,11.7,0.9,18.3-1.2c6.6-2,13.3-5.7,20.3-10.9c7-5.2,13.8-12.1,20.5-20.5
+			   c6.7-8.4,13-18.4,18.9-29.9c2.9-6.1,5.7-12.5,8.2-19c2.5-6.5,4.9-12.7,7-18.6c1.9-3.3,4.6-5.1,8.2-5.4c3.6-0.3,7,0.6,10,2.5
+			   c3.1,1.9,5.5,4.6,7.2,8.1c1.7,3.5,1.8,7.4,0.2,11.7l-5.2,13.8c-4.8,11.5-10.9,24.2-18.1,38.2c-7.2,13.9-16.5,27.4-27.7,40.5
+			   c-6.7,7.2-13.7,12.7-20.9,16.7c-7.2,4-14.2,6.9-20.9,8.8c-6.7,1.9-12.8,3.1-18.3,3.5c-5.5,0.4-9.8,0.6-13.1,0.6
+			   c-20.9,0-38-5.8-51.2-17.3c-13.3-11.5-21.9-27.2-25.9-47.2c-3.5-17.4-3.4-34.4,0.2-51c3.6-16.6,10.5-34.7,20.7-54.1
+			   c3.5-6.4,8.4-13.2,14.9-20.5c6.4-7.3,13.9-14,22.3-20.1s17.6-11.1,27.5-15c9.9-3.8,20.2-5.6,30.9-5.4c11.3,0.3,20.8,3.8,28.7,10.6
+			   c7.9,6.8,12.8,15.9,14.7,27.4c0.8,5.1,0.9,10.3,0.2,15.5c-0.7,5.2-2.3,10.8-5,16.7V364.4z M1135.7,332.9
+			   c-8.8,1.8-16.9,5.9-24.1,12.3c-7.2,6.4-13.6,13.9-19.1,22.6c-5.5,8.7-10,18-13.5,27.8c-3.5,9.8-6,19.1-7.6,27.8
+			   c16.3-7.4,30.5-17.5,42.6-30.1c12.1-12.7,20.9-27.8,26.5-45.5v0.4c0.8-2,1.3-4.1,1.4-6.1c0.1-2,0.1-3.8-0.2-5.4
+			   C1140.9,333.2,1138.9,331.9,1135.7,332.9z"/>
+			<path class="st0" d="M1301.7,313c-1.6,4.9-3.8,11.5-6.4,20c-2.7,8.4-5.6,17.8-8.6,28.2c-3.1,10.4-6.2,21.2-9.2,32.6
+			   c-3.1,11.4-5.8,22.4-8,33c-2.3,10.6-4,20.4-5,29.4c-1.1,9-1.1,16.1,0,21.5v3.1h2.8c7-2.6,13.2-6.7,18.7-12.5
+			   c5.5-5.8,10.4-12.3,14.9-19.6c4.4-7.3,8.4-15.1,12.1-23.4c3.6-8.3,7-16.4,10.2-24.4h-0.4c0.8-2.3,1.8-4.5,3-6.7
+			   c1.2-2.2,2.2-4.3,3-6.3c0.5-1.5,2.3-1.9,5.2-1.2c2.9,0.8,6,2,9.2,3.8c3.2,1.8,6,3.9,8.2,6.3c2.3,2.4,3.1,4.5,2.6,6.3l-7.2,17.3
+			   c-6.2,14.6-13.1,29.4-20.7,44.3s-16.5,28.1-26.7,39.3c-1.9,2-4.3,4.3-7.2,6.7c-3,2.4-6.3,4.7-10,6.7c-3.8,2-7.9,3.8-12.5,5.2
+			   c-4.6,1.4-9.5,2.1-14.9,2.1c-12.1-0.5-21.5-5.2-28.3-14.2s-11.3-20-13.5-33c-0.5-2.8-0.9-5.8-1-9c-0.1-3.2-0.2-6.1-0.2-8.6
+			   c-0.5-25.6,2.3-50.5,8.4-74.6c6.2-24.2,12.9-48,20.1-71.6l10.4-32.2c2.7-9.7,5.4-19.6,8-29.7c2.7-10.1,5.2-20,7.4-29.7
+			   c2.3-9.7,4.2-19.1,5.6-28.2c1.5-9.1,2.6-17.5,3.4-25.1c3.5-2,8.5-2,15.1,0.2c6.6,2.2,12.9,5.6,19.1,10.2
+			   c6.2,4.6,11.5,9.9,16.1,15.9c4.6,6,6.6,11.8,6,17.5c-0.8,3.8-2.2,9.3-4.2,16.5c-2,7.2-4.3,15.2-6.8,24.2c-2.5,9-5.4,18.2-8.4,27.8
+			   c-3.1,9.6-6,18.6-8.6,27L1301.7,313z"/>
+			</g>
+
+			</svg>
+
+			        </div>
+</div>
+
+
+
+<div class="section" id="section1">
+
+		<div class="slide" id="slide1"><h1>ARTS</h1>
+
+			<div class="blog-slider">
+		  <div class="blog-slider__wrp swiper-wrapper">
+		    <div class="blog-slider__item swiper-slide">
+		      <div class="blog-slider__img">
+
+		        <img src="http://wallpaperstop.net/wp-content/uploads/2018/02/Mime%20HD%20Wallpaper.jpg" alt="">
+		      </div>
+		      <div class="blog-slider__content">
+		        <span class="blog-slider__code">28 September 2019</span>
+		        <div class="blog-slider__title">Mime - Impersonate</div>
+		        <div class="blog-slider__text">Don’t tell us, just show us; because actions speak louder than words. Just like the tagline says, you perform to show what you want to say</div>
+		        <a href="#" class="blog-slider__button">READ MORE</a>
+		      </div>
+		    </div>
+		    <div class="blog-slider__item swiper-slide">
+		      <div class="blog-slider__img">
+		        <img src="https://images.unsplash.com/photo-1532540983331-3260f8487880?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1a402f449c10f272680d355b292b1a9d&auto=format&fit=crop&w=1490&q=80" alt="">
+		      </div>
+		      <div class="blog-slider__content">
+		        <span class="blog-slider__code">29 September 2019</span>
+		        <div class="blog-slider__title">Painting - Strokes</div>
+		        <div class="blog-slider__text">Are you the next Picasso? One way to find out.Paintings show your emotions on paper. Come, compete and show the world your vibrant illustrations</div>
+		        <a href="#" class="blog-slider__button">READ MORE</a>
+		      </div>
+		    </div>
+
+		    <div class="blog-slider__item swiper-slide">
+		      <div class="blog-slider__img">
+		        <img src="https://images.unsplash.com/photo-1512830695013-036887bc119e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a525dc05e2821125911503ac99ed65be&auto=format&fit=crop&w=2700&q=80" alt="">
+		      </div>
+		      <div class="blog-slider__content">
+		        <span class="blog-slider__code">29 September 2019</span>
+		        <div class="blog-slider__title">Duet - Twinning Moves</div>
+		        <div class="blog-slider__text">Imagine. Design. Invent. Time to showcase your mind for the entire world to see.Come and showcase your artistic creations along with many other talented artisans</div>
+		        <a href="#" class="blog-slider__button">READ MORE</a>
+		      </div>
+		    </div>
+		    <div class="blog-slider__item swiper-slide">
+		      <div class="blog-slider__img">
+
+		        <img src="https://images.unsplash.com/photo-1532602254606-19fa4578d4eb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=09d885c68b1b368b7fc6b4fa23d0ea32&auto=format&fit=crop&w=2710&q=80" alt="">
+		      </div>
+		      <div class="blog-slider__content">
+		        <span class="blog-slider__code">28 September 2019</span>
+		        <div class="blog-slider__title">Short Film – What the Flix?</div>
+		        <div class="blog-slider__text">What the Flix? Totally. Convert your thoughts and emotions into memorable motion pictures and prove why you deserve to be the best.A journey into the world of young directors and scriptwriters where their thoughts are put in action in the form of a short film. Show us your best work to win a grand prize</div>
+		        <a href="#" class="blog-slider__button">READ MORE</a>
+		      </div>
+		    </div>
+</div>
+		  <div class="blog-slider__pagination"></div>
+		</div>
+</div>
+
+
+
+
+<div class="slide" id="slide2">
+
+	<div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img1">
+
+        <img src="https://images.unsplash.com/photo-1518740028517-36c686a4a001?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=896a844acfa3eeb03140f8440d761ecc&auto=format&fit=crop&w=800&q=80" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">28 September 2019</span>
+        <div class="blog-slider__title">Solo - Une Pirouette</div>
+        <div class="blog-slider__text">Dance first. Think later. It’s the natural order.Dance, the art of moving your body with finesse. It’s a solo dancing competition where you rise above the rest and show the world how to sway with the beat.</div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button1">Register Now</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img1">
+        <img src="https://images.unsplash.com/photo-1517333941-389292d513d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3d9c4b6bbeac75c65ff12038fe85ddf3&auto=format&fit=crop&w=2766&q=80" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">29 September 2019</span>
+        <div class="blog-slider__title">Group - Rabble</div>
+        <div class="blog-slider__text">Coming together is a beginning. Keeping together is a progress. Dancing together is success.Group dances have always been a sight to see. Here many teams compete to step up and become the conquering cadre.</div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button1">READ MORE</a>
+      </div>
+    </div>
+
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img1">
+        <img src="https://images.unsplash.com/photo-1512830695013-036887bc119e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a525dc05e2821125911503ac99ed65be&auto=format&fit=crop&w=2700&q=80" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">29 September 2019</span>
+        <div class="blog-slider__title">Duet - Twinning Moves</div>
+        <div class="blog-slider__text">Why walk when you can dance? Dream with your feet and let your twinning moves grant you redemption.A dance competition where you and your partner shimmy together and win the heart of the crowd. </div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button1">READ MORE</a>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="blog-slider__pagination"></div>
+</div>
+</div>
+
+
+<div class="slide" id="slide3">
+    <!---responsive cards -->
+
+			<div class="blog-slider">
+			  <div class="blog-slider__wrp swiper-wrapper">
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img" id="blog-slider__img2">
+
+			        <img src="https://images.unsplash.com/photo-1514580426463-fd77dc4d0672?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=802c875bf67a4dcaf275e11b1fa48d24&auto=format&fit=crop&w=2730&q=80" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">28 September 2019</span>
+			        <div class="blog-slider__title">Debate – Flip Lip</div>
+			        <div class="blog-slider__text">Can you resolve the conflict in you? If so, you’re most welcome to try.Be confused, be messed up, be twisted as you try to debate both for and against a topic on a simple flip</div>
+			        <a href="#" class="blog-slider__button" id="blog-slider__button2">Register Now</a>
+			      </div>
+			    </div>
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img" id="blog-slider__img2">
+			        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3dd4e03b7ee0a4a60d5f34e0cc11a66c&auto=format&fit=crop&w=900&q=60" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">29 September 2019</span>
+			        <div class="blog-slider__title">JAM – Tick Talk</div>
+			        <div class="blog-slider__text">You’ve got a minute to win it. Bend your thoughts, receive an applause.It’s a race against time where you impress the judges your words and critical sense of thinking</div>
+			        <a href="#" class="blog-slider__button" id="blog-slider__button2">Register Now</a>
+			      </div>
+			    </div>
+
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img" id="blog-slider__img2">
+			        <img src="https://images.unsplash.com/photo-1533741761835-c67cadbffd3e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c8f754a63117c3982a7cb81e69c2606&auto=format&fit=crop&w=694&q=80" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">29 September 2019</span>
+			        <div class="blog-slider__title">Story Completion – Shakespearean Diaries</div>
+			        <div class="blog-slider__text">“Brevity is the Soul of Wit”, that’s what he said…..literally. How are you going to conclude?
+			          Come and showcase your imagination by bringing out beautiful stories from small beginnings</div>
+			        <a href="#" class="blog-slider__button" id="blog-slider__button2">Register Now</a>
+			      </div>
+			    </div>
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img" id="blog-slider__img2">
+
+			        <img src="https://images.unsplash.com/photo-1524086496832-aa348741b7b9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ab20fedf99c32ee99239eb0f8e8e93b5&auto=format&fit=crop&w=900&q=60" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">28 September 2019</span>
+			        <div class="blog-slider__title">AV Quiz</div>
+			        <div class="blog-slider__text">Dig deep into your knowledge. Plunder your brain. Be pushed to the limits in the Battle of the Brains.Showcase your cerebral prowess in a set of challenging audio and visual questionnaires</div>
+			        <a href="#" class="blog-slider__button" id="blog-slider__button2">Register Now</a>
+			      </div>
+			    </div>
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img" id="blog-slider__img2">
+
+			        <img src="https://images.unsplash.com/photo-1526030499293-e745bb88b1fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0dec97144067d6f1e90cabed82bc7436&auto=format&fit=crop&w=900&q=60" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">28 September 2019</span>
+			        <div class="blog-slider__title">Noted Talks</div>
+			        <div class="blog-slider__text">Change comes from within.Here, experienced individuals come forth and share their experiences to teach and inspire youngsters to strive to be the best</div>
+			        <a href="#" class="blog-slider__button" id="blog-slider__button2">Register Now</a>
+			      </div>
+			    </div>
+
+
+
+			  </div>
+			  <div class="blog-slider__pagination"></div>
+			</div>
+		</div>
+
+
+
+		<div class="slide" id="slide4">
+
+<div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img3">
+
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=96b6eb1c3bac5a2a548d7f90020bef2f&auto=format&fit=crop&w=1500&q=80" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">28 September 2019</span>
+        <div class="blog-slider__title">Solo - Melody Magic</div>
+        <div class="blog-slider__text">Find Your Way Into The Timelight. Time To Be The Champion Among Champions. A solo singing competition among you and various contestants. You can showcase your beautiful voice and singing talents to win a grand prize.</div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button3">Register Now</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img3">
+        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-0.3.5&s=93f044381a96aaebef57cd62395f57cc&auto=format&fit=crop&w=1500&q=80" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">29 September 2019</span>
+        <div class="blog-slider__title">Band - Melopacte</div>
+        <div class="blog-slider__text">A musical fiesta filled with lights, music and what-not. A musical ensemble awaits to blow you away.It’s the Battle of the Bands. Your Band must compete among Bands from various colleges and win the hearts of everyone.</div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button3">Register Now</a>
+      </div>
+    </div>
+
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img3">
+        <img src="https://images.unsplash.com/photo-1530189998463-ea74b37a3625?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0a67cc3b3d826099c98460b8726b8cc1&auto=format&fit=crop&w=1500&q=80" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">29 September 2019</span>
+        <div class="blog-slider__title">Group - Rhythm Gods</div>
+        <div class="blog-slider__text">The Gods have come singing songs of might and glory. The choice is up to you to challenge them and become Gods yourselves.Unity is Strength. It’s a group competition where you sing in symphony along with your team. Bring out the best in you by uniting your voices as one.</div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button3">Register Now</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="blog-slider__pagination"></div>
+</div>
+</div>
+
+	<div class="slide" id="slide5">
+
+<!---Responsive Card 5--->
+<div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img4">
+
+        <img src="https://images.unsplash.com/photo-1514580426463-fd77dc4d0672?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=802c875bf67a4dcaf275e11b1fa48d24&auto=format&fit=crop&w=2730&q=80" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">28 September 2019</span>
+        <div class="blog-slider__title">Photography – Picturesque</div>
+        <div class="blog-slider__text">Can you resolve the conflict in you? If so, you’re most welcome to try.Be confused, be messed up, be twisted as you try to debate both for and against a topic on a simple flip</div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button4">Register Now</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img4">
+        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3dd4e03b7ee0a4a60d5f34e0cc11a66c&auto=format&fit=crop&w=900&q=60" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">29 September 2019</span>
+        <div class="blog-slider__title">Musically – Lip Synchro</div>
+        <div class="blog-slider__text">When mind and action are separate, zen is lost. We keep the two in sync by paying attention.Inspired from the online phenomenon, Musical.ly. You are given the opportunity to display your acting skills by synchronizing with vocals of your choice</div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button4">Register Now</a>
+      </div>
+    </div>
+
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img" id="blog-slider__img4">
+        <img src="https://images.unsplash.com/photo-1533741761835-c67cadbffd3e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c8f754a63117c3982a7cb81e69c2606&auto=format&fit=crop&w=694&q=80" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">29 September 2019</span>
+        <div class="blog-slider__title">Caption – Rubric Illustration</div>
+        <div class="blog-slider__text">Captions can be to pictures, as trailers are to movies.You are given the opportunity to display your prowess in wordplay by giving appropriate captions to a wide variety of illustrations</div>
+        <a href="#" class="blog-slider__button" id="blog-slider__button4">Register Now</a>
+      </div>
+    </div>
+</div>
+  <div class="blog-slider__pagination"></div>
+</div>
+
+</div>
+	</div>
+
+	<div class="section" id="section2"><h1>Hospitality</h1></div>
+  <div class="section" id="section3"><h1>Contacts</h1>
+  </div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script  src="js/index.js"></script>
+<script type="text/javascript" src="vendors/scrolloverflow.min.js">
+scrollOverflow: true,
+</script>
+<script type="text/javascript" src="../dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        autoScrolling: true,
+        verticalCentered: false,
+        loopBottom: true,
+        keyboardScrolling: true,
+        slidesNavigation: true,
+        scrollHorizontally: true,
+        scrollingSpeed: 600,
+
+        controlArrows: true,
+
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3:false
+    });
+</script>
+
+
+
+</body>
+</html>
